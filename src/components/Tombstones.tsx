@@ -52,7 +52,7 @@ export function Tombstones() {
               src={logo.src}
               alt={logo.alt}
               loading="lazy"
-              className="h-14 md:h-20 w-auto object-contain shrink-0 contrast-125"
+              className="h-14 md:h-20 w-auto object-contain shrink-0"
             />
           ))}
         </div>
