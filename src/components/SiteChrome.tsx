@@ -1,29 +1,50 @@
 import { Link } from "@tanstack/react-router";
+import { Menu } from "lucide-react";
 import logoUrl from "@/assets/fitcapital-logo.png";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
+const NAV_LINKS = [
+  { href: "#services", label: "Services" },
+  { href: "#transactions", label: "Clients" },
+  { href: "#team", label: "Team" },
+  { href: "#testimonials", label: "Testimonials" },
+  { href: "#contact", label: "Contact" },
+];
 
 export function SiteHeader() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center group" aria-label="Fit Capital home">
           <img
             src={logoUrl}
             alt="Fit Capital"
-            className="h-8 md:h-9 w-auto object-contain"
+            className="h-12 md:h-14 w-auto object-contain"
           />
         </Link>
-        <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
-          <a href="#services" className="hover:text-foreground transition-colors">Services</a>
-          <a href="#transactions" className="hover:text-foreground transition-colors">Clients</a>
-          <a href="#team" className="hover:text-foreground transition-colors">Team</a>
-          <a href="#testimonials" className="hover:text-foreground transition-colors">Testimonials</a>
-        </nav>
-        <a
-          href="#contact"
-          className="hidden sm:inline-flex items-center gap-2 text-sm border border-foreground/60 text-foreground px-4 py-2 rounded-sm hover:bg-foreground hover:text-background transition-colors"
-        >
-          Start a Conversation
-        </a>
+        <DropdownMenu>
+          <DropdownMenuTrigger
+            className="inline-flex items-center justify-center gap-2 text-sm text-foreground border border-foreground/40 rounded-sm px-3 py-2 hover:bg-foreground hover:text-background transition-colors"
+            aria-label="Open navigation menu"
+          >
+            <Menu className="h-5 w-5" />
+            <span className="hidden sm:inline">Menu</span>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end" className="w-48">
+            {NAV_LINKS.map((link) => (
+              <DropdownMenuItem key={link.href} asChild>
+                <a href={link.href} className="cursor-pointer">
+                  {link.label}
+                </a>
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
     </header>
   );
