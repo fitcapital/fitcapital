@@ -156,7 +156,7 @@ function WhyUs() {
     "Less management time fundraising",
   ];
   return (
-    <section className="py-16 lg:py-20 border-t border-border bg-secondary/30">
+    <section className="py-16 lg:py-20 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <div className="eyebrow">Why Fit Capital</div>
@@ -169,14 +169,14 @@ function WhyUs() {
             capital providers underwrite — and we use that to your advantage.
           </p>
         </div>
-        <ul className="grid sm:grid-cols-2 gap-px bg-border border border-border">
+        <ul className="grid sm:grid-cols-2 gap-4">
           {bullets.map((b) => (
-            <li key={b} className="bg-card p-5 flex items-start gap-3">
+            <li key={b} className="p-5 flex items-start gap-3">
               <span className="text-gold mt-1 font-bold">✓</span>
               <span className="font-semibold">{b}</span>
             </li>
           ))}
-          <li className="bg-card p-6 sm:col-span-2 border-t border-border">
+          <li className="p-6 sm:col-span-2">
             <div className="eyebrow">Engagements</div>
             <div className="mt-2 font-serif text-2xl">Target raise $10M – $100M+</div>
             <div className="text-sm text-muted-foreground mt-1">
