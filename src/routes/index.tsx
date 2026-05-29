@@ -58,9 +58,11 @@ function Hero() {
       <div className="absolute inset-0 pointer-events-none opacity-[0.04] [background-image:linear-gradient(var(--color-foreground)_1px,transparent_1px),linear-gradient(90deg,var(--color-foreground)_1px,transparent_1px)] [background-size:64px_64px]" />
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
         <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] text-balance animate-fade-up">
-          A debt-focused
-          <br />
-          investment bank,
+          <span className="text-muted-foreground">
+            A debt-focused
+            <br />
+            investment bank,
+          </span>
           <br />
           <span className="italic text-lender-gold">built by lenders.</span>
         </h1>
