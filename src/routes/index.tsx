@@ -72,7 +72,7 @@ function Hero() {
         <div className="mt-10 flex flex-wrap items-center gap-4 animate-fade-up">
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 bg-gradient-gold text-gold-foreground px-6 py-3 rounded-sm font-medium shadow-gold hover:opacity-95 transition-opacity"
+            className="inline-flex items-center gap-2 bg-gradient-gold text-gold-foreground px-4 py-2 rounded-sm text-sm font-medium shadow-gold hover:opacity-95 transition-opacity"
           >
             Start a Conversation
             <span aria-hidden>→</span>
@@ -81,7 +81,7 @@ function Hero() {
             href="#transactions"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors px-2 py-3"
           >
-            View select transactions
+            Select clients
           </a>
         </div>
 
@@ -156,7 +156,7 @@ function WhyUs() {
     "Less management time fundraising",
   ];
   return (
-    <section className="py-24 lg:py-32 border-t border-border bg-secondary/30">
+    <section className="py-20 lg:py-24 border-t border-border bg-secondary/30">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
         <div>
           <div className="eyebrow">Why Fit Capital</div>
@@ -229,7 +229,7 @@ function Team() {
     },
   ];
   return (
-    <section id="team" className="py-24 lg:py-32 border-t border-border">
+    <section id="team" className="py-20 lg:py-24 border-t border-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="max-w-2xl">
           <div className="eyebrow">Leadership</div>
@@ -301,7 +301,7 @@ function Team() {
 
 function CTA() {
   return (
-    <section id="contact" className="py-24 lg:py-32 border-t border-border">
+    <section id="contact" className="py-20 lg:py-24 border-t border-border">
       <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
         <div className="eyebrow">Start a Conversation</div>
         <h2 className="mt-4 text-4xl md:text-6xl text-balance">
