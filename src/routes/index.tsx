@@ -132,9 +132,9 @@ function Services() {
             Three mandates. One discipline.
           </h2>
         </div>
-        <div className="grid gap-px bg-border border border-border">
+        <div className="grid gap-5">
           {items.map((it) => (
-            <div key={it.tag} className="bg-card p-6 grid md:grid-cols-[80px_1fr] gap-6 items-baseline">
+            <div key={it.tag} className="bg-card border border-border rounded-sm shadow-elegant p-6 grid md:grid-cols-[80px_1fr] gap-6 items-baseline">
               <div className="font-serif text-2xl text-gold">{it.tag}</div>
               <div>
                 <h3 className="font-serif text-2xl">{it.title}</h3>
