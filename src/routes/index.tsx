@@ -85,14 +85,14 @@ function Hero() {
           </a>
         </div>
 
-        <dl className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-px bg-border border border-border">
+        <dl className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-5">
           {[
             ["60+", "Years Experience"],
             ["150+", "Transactions"],
             ["250+", "Capital Partners"],
             ["$3.0B+", "Commitments"],
           ].map(([k, v]) => (
-            <div key={k} className="bg-background p-6 md:p-8">
+            <div key={k} className="bg-card border border-border rounded-sm shadow-elegant p-6 md:p-8">
               <dt className="font-serif text-3xl md:text-5xl text-gold">{k}</dt>
               <dd className="mt-2 text-xs uppercase tracking-[0.2em] text-muted-foreground">
                 {v}
@@ -132,9 +132,9 @@ function Services() {
             Three mandates. One discipline.
           </h2>
         </div>
-        <div className="grid gap-px bg-border border border-border">
+        <div className="grid gap-5">
           {items.map((it) => (
-            <div key={it.tag} className="bg-card p-6 grid md:grid-cols-[80px_1fr] gap-6 items-baseline">
+            <div key={it.tag} className="bg-card border border-border rounded-sm shadow-elegant p-6 grid md:grid-cols-[80px_1fr] gap-6 items-baseline">
               <div className="font-serif text-2xl text-gold">{it.tag}</div>
               <div>
                 <h3 className="font-serif text-2xl">{it.title}</h3>
@@ -169,14 +169,14 @@ function WhyUs() {
             capital providers underwrite — and we use that to your advantage.
           </p>
         </div>
-        <ul className="grid sm:grid-cols-2 gap-px bg-border border border-border">
+        <ul className="grid sm:grid-cols-2 gap-5">
           {bullets.map((b) => (
-            <li key={b} className="bg-card p-5 flex items-start gap-3">
+            <li key={b} className="bg-card border border-border rounded-sm shadow-elegant p-5 flex items-start gap-3">
               <span className="text-gold mt-1 font-bold">✓</span>
               <span className="font-semibold">{b}</span>
             </li>
           ))}
-          <li className="bg-card p-6 sm:col-span-2 border-t border-border">
+          <li className="bg-card border border-border rounded-sm shadow-elegant p-6 sm:col-span-2">
             <div className="eyebrow">Engagements</div>
             <div className="mt-2 font-serif text-2xl">Target raise $10M – $100M+</div>
             <div className="text-sm text-muted-foreground mt-1">
