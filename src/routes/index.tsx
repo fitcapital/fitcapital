@@ -85,14 +85,14 @@ function Hero() {
           </a>
         </div>
 
-        <dl className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-px bg-border border border-border">
+        <dl className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-5">
           {[
             ["60+", "Years Experience"],
             ["150+", "Transactions"],
             ["250+", "Capital Partners"],
             ["$3.0B+", "Commitments"],
           ].map(([k, v]) => (
-            <div key={k} className="bg-background p-6 md:p-8">
+            <div key={k} className="bg-card border border-border rounded-sm shadow-elegant p-6 md:p-8">
               <dt className="font-serif text-3xl md:text-5xl text-gold">{k}</dt>
               <dd className="mt-2 text-xs uppercase tracking-[0.2em] text-muted-foreground">
                 {v}
