@@ -58,9 +58,11 @@ function Hero() {
       <div className="absolute inset-0 pointer-events-none opacity-[0.04] [background-image:linear-gradient(var(--color-foreground)_1px,transparent_1px),linear-gradient(90deg,var(--color-foreground)_1px,transparent_1px)] [background-size:64px_64px]" />
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
         <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] text-balance animate-fade-up">
-          A debt-focused
-          <br />
-          investment bank,
+          <span className="text-muted-foreground">
+            A debt-focused
+            <br />
+            investment bank,
+          </span>
           <br />
           <span className="italic text-lender-gold">built by lenders.</span>
         </h1>
@@ -169,15 +171,15 @@ function WhyUs() {
         </div>
         <ul className="grid sm:grid-cols-2 gap-5">
           {bullets.map((b) => (
-            <li key={b} className="bg-card border border-border rounded-sm shadow-elegant p-5 flex items-start gap-3">
-              <span className="text-gold mt-1 font-bold">✓</span>
-              <span className="font-semibold">{b}</span>
+            <li key={b} className="bg-[#d4d4d8] border border-black/10 rounded-sm p-5 flex items-start gap-3">
+              <span className="text-black mt-1 font-bold">✓</span>
+              <span className="font-semibold text-black">{b}</span>
             </li>
           ))}
-          <li className="bg-card border border-border rounded-sm shadow-elegant p-6 sm:col-span-2">
-            <div className="eyebrow">Engagements</div>
-            <div className="mt-2 font-serif text-2xl">Target raise $10M – $100M+</div>
-            <div className="text-sm text-muted-foreground mt-1">
+          <li className="bg-[#d4d4d8] border border-black/10 rounded-sm p-6 sm:col-span-2">
+            <div className="text-black uppercase tracking-[0.22em] text-[0.7rem] font-medium">Engagements</div>
+            <div className="mt-2 font-serif text-2xl text-black">Target raise $10M – $100M+</div>
+            <div className="text-sm text-black/70 mt-1">
               VC-backed, PE-backed, or bootstrapped
             </div>
           </li>
