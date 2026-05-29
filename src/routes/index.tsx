@@ -132,7 +132,7 @@ function Services() {
             Three mandates. One discipline.
           </h2>
         </div>
-        <div className="grid gap-5">
+        <div className="grid gap-3">
           {items.map((it) => (
             <div key={it.tag} className="bg-card border border-border rounded-sm shadow-elegant p-6 grid md:grid-cols-[80px_1fr] gap-6 items-baseline">
               <div className="font-serif text-2xl text-gold">{it.tag}</div>
@@ -157,7 +157,7 @@ function WhyUs() {
   ];
   return (
     <section className="py-12 lg:py-16">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 items-start">
         <div>
           <div className="eyebrow">Why Fit Capital</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
