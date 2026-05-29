@@ -1,11 +1,21 @@
+import cloudhesive from "@/assets/clients/cloudhesive.png";
+import observe from "@/assets/clients/observe.png";
+import obsidian from "@/assets/clients/obsidian.png";
+import pipedreams from "@/assets/clients/pipedreams.png";
+import savvy from "@/assets/clients/savvy.png";
+import stake from "@/assets/clients/stake.png";
+import tqa from "@/assets/clients/tqa.png";
+import trustlogix from "@/assets/clients/trustlogix.png";
+
 const LOGOS = [
-  "https://static.wixstatic.com/media/104b7b_c88399e438f34fa5abf477ac35cd26bf~mv2.png",
-  "https://static.wixstatic.com/media/104b7b_0a60050928d54888aa541de518dd6c84~mv2.png",
-  "https://static.wixstatic.com/media/104b7b_c3a44b1ac8e84e37aaa345e5a2fe49dc~mv2.png",
-  "https://static.wixstatic.com/media/104b7b_5c87cccd55cd45ad9f35ad051ef14531~mv2.png",
-  "https://static.wixstatic.com/media/104b7b_ac0f385092f747fc966edec763592cab~mv2.png",
-  "https://static.wixstatic.com/media/104b7b_a7a8f6a05dbd439cbf3c5f17cd796f3d~mv2.png",
-  "https://static.wixstatic.com/media/104b7b_4f998121a62544a9a7a375c47b5f466f~mv2.png",
+  { src: cloudhesive, alt: "CloudHesive" },
+  { src: observe, alt: "Observe" },
+  { src: obsidian, alt: "Obsidian" },
+  { src: pipedreams, alt: "Pipedreams" },
+  { src: savvy, alt: "Savvy" },
+  { src: stake, alt: "Stake" },
+  { src: tqa, alt: "TQA" },
+  { src: trustlogix, alt: "TrustLogix" },
 ];
 
 export function Tombstones() {
@@ -28,21 +38,21 @@ export function Tombstones() {
       </div>
 
       <div
-        className="mt-14 relative overflow-hidden border-y border-border bg-secondary/30"
+        className="mt-14 relative overflow-hidden border-y border-border bg-white"
         aria-label="Client logos"
       >
-        {/* edge fades */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-gradient-to-r from-background to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-gradient-to-l from-background to-transparent" />
+        {/* edge fades over the light strip */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-gradient-to-r from-white to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-gradient-to-l from-white to-transparent" />
 
-        <div className="marquee-track flex items-center gap-16 py-10 w-max">
-          {track.map((src, i) => (
+        <div className="marquee-track flex items-center gap-20 py-10 w-max">
+          {track.map((logo, i) => (
             <img
               key={i}
-              src={src}
-              alt=""
+              src={logo.src}
+              alt={logo.alt}
               loading="lazy"
-              className="h-12 md:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity shrink-0"
+              className="h-8 md:h-10 w-auto object-contain shrink-0 opacity-90 hover:opacity-100 transition-opacity"
             />
           ))}
         </div>
