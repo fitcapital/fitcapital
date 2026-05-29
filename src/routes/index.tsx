@@ -58,7 +58,7 @@ function Hero() {
       <div className="absolute inset-0 pointer-events-none opacity-[0.04] [background-image:linear-gradient(var(--color-foreground)_1px,transparent_1px),linear-gradient(90deg,var(--color-foreground)_1px,transparent_1px)] [background-size:64px_64px]" />
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
         <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] text-balance animate-fade-up">
-          <span className="text-muted-foreground">
+          <span className="text-foreground">
             A debt-focused
             <br />
             investment bank,
@@ -69,21 +69,6 @@ function Hero() {
         <p className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed animate-fade-up">
           We advise growth-stage companies on raising non-dilutive growth capital from $10M to $100M+.
         </p>
-        <div className="mt-10 flex flex-wrap items-center gap-4 animate-fade-up">
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 bg-gradient-gold text-gold-foreground px-4 py-2 rounded-sm text-sm font-medium shadow-gold hover:opacity-95 transition-opacity"
-          >
-            Start a Conversation
-            <span aria-hidden>→</span>
-          </a>
-          <a
-            href="#transactions"
-            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors px-2 py-3"
-          >
-            Select clients
-          </a>
-        </div>
 
         <dl className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-5">
           {[
