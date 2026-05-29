@@ -1,53 +1,56 @@
+const LOGOS = [
+  "https://static.wixstatic.com/media/104b7b_c88399e438f34fa5abf477ac35cd26bf~mv2.png",
+  "https://static.wixstatic.com/media/104b7b_0a60050928d54888aa541de518dd6c84~mv2.png",
+  "https://static.wixstatic.com/media/104b7b_c3a44b1ac8e84e37aaa345e5a2fe49dc~mv2.png",
+  "https://static.wixstatic.com/media/104b7b_5c87cccd55cd45ad9f35ad051ef14531~mv2.png",
+  "https://static.wixstatic.com/media/104b7b_ac0f385092f747fc966edec763592cab~mv2.png",
+  "https://static.wixstatic.com/media/104b7b_a7a8f6a05dbd439cbf3c5f17cd796f3d~mv2.png",
+  "https://static.wixstatic.com/media/104b7b_4f998121a62544a9a7a375c47b5f466f~mv2.png",
+];
+
 export function Tombstones() {
-  const deals = [
-    { company: "Series C SaaS Platform", amount: "$75M", type: "Growth Debt", lender: "Top-Tier Credit Fund" },
-    { company: "AI Infrastructure Co.", amount: "$50M", type: "Venture Debt", lender: "Bank Lender" },
-    { company: "Vertical SaaS Leader", amount: "$120M", type: "Structured Finance", lender: "Private Credit" },
-    { company: "Healthcare Technology", amount: "$40M", type: "Venture Debt", lender: "Specialty Lender" },
-    { company: "Fintech Lending Platform", amount: "$200M", type: "Warehouse Facility", lender: "Money-Center Bank" },
-    { company: "Climate Tech Pioneer", amount: "$60M", type: "Project Finance", lender: "Infrastructure Fund" },
-    { company: "Enterprise Cybersecurity", amount: "$35M", type: "Growth Debt", lender: "Credit Fund" },
-    { company: "Marketplace Operator", amount: "$90M", type: "Structured Finance", lender: "Private Credit" },
-  ];
+  // Duplicate twice so the marquee loops seamlessly (translate -50%).
+  const track = [...LOGOS, ...LOGOS];
 
   return (
     <section id="transactions" className="py-24 lg:py-32 border-t border-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="max-w-2xl">
-          <div className="eyebrow">Select Transactions</div>
+          <div className="eyebrow">Select Clients</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
-            Capital committed to companies we believe in.
+            Partnering with exceptional companies.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            A representative sample of advised transactions across venture debt,
-            growth debt, and structured finance.
+            A representative sample of companies our team has advised across
+            venture debt, growth debt, and structured finance.
           </p>
         </div>
+      </div>
 
-        <div className="mt-14 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4 border border-border">
-          {deals.map((d, i) => (
-            <article
+      <div
+        className="mt-14 relative overflow-hidden border-y border-border bg-secondary/30"
+        aria-label="Client logos"
+      >
+        {/* edge fades */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-gradient-to-r from-background to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-gradient-to-l from-background to-transparent" />
+
+        <div className="marquee-track flex items-center gap-16 py-10 w-max">
+          {track.map((src, i) => (
+            <img
               key={i}
-              className="group bg-card p-6 md:p-8 flex flex-col justify-between min-h-[220px] hover:bg-secondary transition-colors"
-            >
-              <div className="flex items-start justify-between">
-                <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                  {d.type}
-                </span>
-                <span className="w-1.5 h-1.5 rounded-full bg-gold opacity-70 group-hover:opacity-100" />
-              </div>
-              <div className="mt-8">
-                <div className="font-serif text-3xl md:text-4xl text-gold">{d.amount}</div>
-                <div className="mt-3 font-serif text-lg leading-snug">{d.company}</div>
-                <div className="mt-2 text-xs text-muted-foreground">
-                  Advised on facility from {d.lender}
-                </div>
-              </div>
-            </article>
+              src={src}
+              alt=""
+              loading="lazy"
+              className="h-12 md:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity shrink-0"
+            />
           ))}
         </div>
-        <p className="mt-6 text-xs text-muted-foreground">*Partial transaction list. Selected for illustration.</p>
       </div>
+
+      <p className="mt-6 max-w-7xl mx-auto px-6 lg:px-10 text-xs text-muted-foreground">
+        *Partial transaction list. Selected for illustration.
+      </p>
     </section>
   );
 }
