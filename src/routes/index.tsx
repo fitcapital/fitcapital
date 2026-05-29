@@ -2,6 +2,14 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 import { Tombstones } from "@/components/Tombstones";
 import { Testimonials } from "@/components/Testimonials";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogDescription,
+} from "@/components/ui/dialog";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -50,7 +58,7 @@ function Hero() {
           <br />
           investment bank,
           <br />
-          <span className="italic text-gold">built by lenders.</span>
+          <span className="italic text-lender-gold">built by lenders.</span>
         </h1>
         <p className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed animate-fade-up">
           We advise growth-stage companies on venture debt, growth debt, and
