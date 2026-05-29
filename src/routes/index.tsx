@@ -65,8 +65,7 @@ function Hero() {
           <span className="italic text-lender-gold">built by lenders.</span>
         </h1>
         <p className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed animate-fade-up">
-          We advise growth-stage companies on venture debt, growth debt, and
-          structured finance — typically $10M to $100M+.
+          We advise growth-stage companies on raising non-dilutive growth capital from $10M to $100M+.
         </p>
         <div className="mt-10 flex flex-wrap items-center gap-4 animate-fade-up">
           <a
