@@ -19,12 +19,12 @@ const NAV_LINKS = [
 export function SiteHeader() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-28 flex items-center justify-between">
         <Link to="/" className="flex items-center group" aria-label="Fit Capital home">
           <img
             src={logoUrl}
             alt="Fit Capital"
-            className="h-8 md:h-9 w-auto object-contain"
+            className="h-16 md:h-[4.5rem] w-auto object-contain"
           />
         </Link>
         <DropdownMenu>
