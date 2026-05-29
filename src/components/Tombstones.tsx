@@ -23,7 +23,7 @@ export function Tombstones() {
   const track = [...LOGOS, ...LOGOS];
 
   return (
-    <section id="transactions" className="py-16 lg:py-20 border-t border-border">
+    <section id="transactions" className="py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="max-w-2xl">
           <div className="eyebrow">Select Clients</div>

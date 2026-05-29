@@ -21,7 +21,7 @@ export function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="py-16 lg:py-20 border-t border-border bg-secondary/30">
+    <section id="testimonials" className="py-12 lg:py-16 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="max-w-2xl">
           <div className="eyebrow">In Their Words</div>
