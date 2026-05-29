@@ -194,8 +194,10 @@ function Team() {
       role: "Managing Partner",
       photo: joelPhoto,
       bio: [
-        "Joel is a Managing Partner at Fit Capital and co-leads the firm's debt advisory practice. Prior to founding Fit Capital, Joel spent his career on the lender side, originating, underwriting, and structuring venture and growth debt facilities for high-growth technology companies.",
-        "He has been involved in hundreds of millions of dollars of debt commitments across software, fintech, healthcare technology, and consumer internet, working with both venture-backed and bootstrapped issuers.",
+        "Joel has over two decades of experience in direct lending, banking, and private equity focused on middle-market and technology companies. He has originated and led more than $1 billion in debt capital commitments.",
+        "Prior to founding fitcapital, Joel was Managing Director and Head of Stifel Technology Capital, part of Stifel Financial Corp (NYSE: SF). He previously served as Managing Director at ORIX Growth Capital, where he led the West Coast team, and as Business Line Manager at Bridge Bank Technology Banking.",
+        "Joel received a BS from the University of California, Davis and an MBA in Entrepreneurship from San Diego State University.",
+        "Joel is a Registered Representative of BA Securities, LLC, Member FINRA SIPC",
       ],
     },
     {
@@ -203,8 +205,10 @@ function Team() {
       role: "Managing Partner",
       photo: chadPhoto,
       bio: [
-        "Chad is a Managing Partner at Fit Capital and brings deep experience structuring credit facilities for growth-stage companies. Earlier in his career he held senior origination and underwriting roles at leading venture and specialty lenders.",
-        "Chad has executed financings across venture debt, growth term loans, ABL, and warehouse facilities, and works closely with founders and CFOs to align capital structure with the company's operating plan.",
+        "Chad has over 15 years of technology banking and lending experience across the venture, growth, and middle-market sectors. He has structured and closed more than $1 billion in debt capital commitments.",
+        "Prior to fitcapital, Chad led the Bay Area Innovation Economy team at J.P. Morgan and previously served as a Relationship Manager in the Technology and Global Cleantech groups at Wells Fargo.",
+        "Chad received an MS in Project Management from Northwestern University and a BS in Business Management from Palm Beach Atlantic University.",
+        "Chad is a Registered Representative of BA Securities, LLC, Member FINRA SIPC.",
       ],
     },
     {
@@ -212,8 +216,10 @@ function Team() {
       role: "Partner",
       photo: jonPhoto,
       bio: [
-        "Jon is a Partner at Fit Capital, focused on structuring and executing debt financings for technology and tech-enabled businesses. Prior to Fit Capital, Jon worked at leading credit funds and venture lenders, evaluating and underwriting debt opportunities across multiple sectors.",
-        "He partners with management teams from process kickoff through closing, negotiating terms with banks, private credit funds, and specialty lenders to deliver the best fit for the business.",
+        "Jon Weitzel is a Partner at fitcapital, where he advises growth-stage technology companies on debt capital raising across the full capital stack, including venture debt, private credit, and growth equity. He has more than 25 years of underwriting and investment experience and has participated in 100+ transactions totaling over $1 billion invested, with a particular focus on enterprise software.",
+        "Jon's career includes investment and lending roles at White Oak Global Advisors, ORIX Growth Capital, Monroe Capital, and Bridge Bank Technology Banking.",
+        "He received a BS in Business Administration (Finance) from Cal Poly, San Luis Obispo, and an MBA in Finance and Accounting from the University of Chicago Booth School of Business.",
+        "Jon is a Registered Representative of BA Securities, LLC, Member FINRA SIPC.",
       ],
     },
   ];
