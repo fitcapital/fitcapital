@@ -124,7 +124,7 @@ function Services() {
     },
   ];
   return (
-    <section id="services" className="py-16 lg:py-20">
+    <section id="services" className="py-16 lg:py-20 border-t border-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[1fr_2fr] gap-8">
         <div>
           <div className="eyebrow">What We Do</div>
@@ -132,7 +132,7 @@ function Services() {
             Three mandates. One discipline.
           </h2>
         </div>
-        <div className="grid gap-4">
+        <div className="grid gap-px bg-border border border-border">
           {items.map((it) => (
             <div key={it.tag} className="bg-card p-6 grid md:grid-cols-[80px_1fr] gap-6 items-baseline">
               <div className="font-serif text-2xl text-gold">{it.tag}</div>
