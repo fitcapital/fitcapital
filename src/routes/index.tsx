@@ -156,8 +156,8 @@ function WhyUs() {
     "Less management time fundraising",
   ];
   return (
-    <section className="py-20 lg:py-24 border-t border-border bg-secondary/30">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+    <section className="py-16 lg:py-20 border-t border-border bg-secondary/30">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <div className="eyebrow">Why Fit Capital</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
@@ -171,7 +171,7 @@ function WhyUs() {
         </div>
         <ul className="grid sm:grid-cols-2 gap-px bg-border border border-border">
           {bullets.map((b) => (
-            <li key={b} className="bg-card p-6 flex items-start gap-3">
+            <li key={b} className="bg-card p-5 flex items-start gap-3">
               <span className="text-gold mt-1 font-bold">✓</span>
               <span className="font-semibold">{b}</span>
             </li>
@@ -229,7 +229,7 @@ function Team() {
     },
   ];
   return (
-    <section id="team" className="py-20 lg:py-24 border-t border-border">
+    <section id="team" className="py-16 lg:py-20 border-t border-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="max-w-2xl">
           <div className="eyebrow">Leadership</div>
@@ -237,7 +237,7 @@ function Team() {
             Senior bankers on every engagement.
           </h2>
         </div>
-        <div className="mt-14 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="mt-10 grid sm:grid-cols-2 md:grid-cols-3 gap-5">
           {members.map((m) => (
             <Dialog key={m.name}>
               <DialogTrigger asChild>
@@ -301,7 +301,7 @@ function Team() {
 
 function CTA() {
   return (
-    <section id="contact" className="py-20 lg:py-24 border-t border-border">
+    <section id="contact" className="py-16 lg:py-20 border-t border-border">
       <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
         <div className="eyebrow">Start a Conversation</div>
         <h2 className="mt-4 text-4xl md:text-6xl text-balance">
@@ -311,7 +311,7 @@ function CTA() {
           A 30-minute call is the fastest way to understand fit, structure, and
           market terms for your business.
         </p>
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <a
             href="mailto:info@fitcapital.com"
             className="inline-flex items-center gap-2 bg-gradient-gold text-gold-foreground px-7 py-3 rounded-sm font-medium shadow-gold hover:opacity-95 transition-opacity"

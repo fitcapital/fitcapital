@@ -21,7 +21,7 @@ export function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="py-20 lg:py-24 border-t border-border bg-secondary/30">
+    <section id="testimonials" className="py-16 lg:py-20 border-t border-border bg-secondary/30">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="max-w-2xl">
           <div className="eyebrow">In Their Words</div>
@@ -30,11 +30,11 @@ export function Testimonials() {
           </h2>
         </div>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-5 md:grid-cols-3">
           {quotes.map((q, i) => (
             <figure
               key={i}
-              className="bg-card border border-border p-8 flex flex-col gap-6 rounded-sm shadow-elegant"
+              className="bg-card border border-border p-6 flex flex-col gap-5 rounded-sm shadow-elegant"
             >
               <div className="text-gold font-serif text-5xl leading-none">"</div>
               <blockquote className="text-base leading-relaxed text-foreground/90">

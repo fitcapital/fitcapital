@@ -23,7 +23,7 @@ export function Tombstones() {
   const track = [...LOGOS, ...LOGOS];
 
   return (
-    <section id="transactions" className="py-20 lg:py-24 border-t border-border">
+    <section id="transactions" className="py-16 lg:py-20 border-t border-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="max-w-2xl">
           <div className="eyebrow">Select Clients</div>
@@ -38,14 +38,14 @@ export function Tombstones() {
       </div>
 
       <div
-        className="mt-14 relative overflow-hidden border-y border-border bg-[#0a0a0a]"
+        className="mt-10 relative overflow-hidden border-y border-border bg-[#0a0a0a]"
         aria-label="Client logos"
       >
         {/* edge fades over the dark strip */}
         <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-gradient-to-r from-[#0a0a0a] to-transparent" />
         <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-gradient-to-l from-[#0a0a0a] to-transparent" />
 
-        <div className="marquee-track flex items-center gap-24 py-12 w-max">
+        <div className="marquee-track flex items-center gap-24 py-10 w-max">
           {track.map((logo, i) => (
             <img
               key={i}
