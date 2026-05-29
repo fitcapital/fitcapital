@@ -10,6 +10,9 @@ import {
   DialogTrigger,
   DialogDescription,
 } from "@/components/ui/dialog";
+import joelPhoto from "@/assets/team-joel.png";
+import chadPhoto from "@/assets/team-chad.png";
+import jonPhoto from "@/assets/team-jon.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -189,8 +192,7 @@ function Team() {
     {
       name: "Joel Gragg",
       role: "Managing Partner",
-      photo:
-        "https://static.wixstatic.com/media/104b7b_698538d8544a4011a12bb4ec8be5ca05~mv2.png/v1/fill/w_538,h_608,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Joel_headshot_GREY.png",
+      photo: joelPhoto,
       bio: [
         "Joel is a Managing Partner at Fit Capital and co-leads the firm's debt advisory practice. Prior to founding Fit Capital, Joel spent his career on the lender side, originating, underwriting, and structuring venture and growth debt facilities for high-growth technology companies.",
         "He has been involved in hundreds of millions of dollars of debt commitments across software, fintech, healthcare technology, and consumer internet, working with both venture-backed and bootstrapped issuers.",
@@ -199,8 +201,7 @@ function Team() {
     {
       name: "Chad Cochran",
       role: "Managing Partner",
-      photo:
-        "https://static.wixstatic.com/media/104b7b_25a126c9e33b40599a45b854f4213231~mv2.png/v1/fill/w_538,h_608,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Chad_Cochran_headshot_GREY.png",
+      photo: chadPhoto,
       bio: [
         "Chad is a Managing Partner at Fit Capital and brings deep experience structuring credit facilities for growth-stage companies. Earlier in his career he held senior origination and underwriting roles at leading venture and specialty lenders.",
         "Chad has executed financings across venture debt, growth term loans, ABL, and warehouse facilities, and works closely with founders and CFOs to align capital structure with the company's operating plan.",
@@ -209,8 +210,7 @@ function Team() {
     {
       name: "Jon Weitzel",
       role: "Partner",
-      photo:
-        "https://static.wixstatic.com/media/104b7b_d2e996c8f8644ead8d62c8b5a6ac4de4~mv2.png/v1/fill/w_538,h_608,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Jon_headshot_GREY.png",
+      photo: jonPhoto,
       bio: [
         "Jon is a Partner at Fit Capital, focused on structuring and executing debt financings for technology and tech-enabled businesses. Prior to Fit Capital, Jon worked at leading credit funds and venture lenders, evaluating and underwriting debt opportunities across multiple sectors.",
         "He partners with management teams from process kickoff through closing, negotiating terms with banks, private credit funds, and specialty lenders to deliver the best fit for the business.",
