@@ -231,7 +231,7 @@ function Team() {
             <Dialog key={m.name}>
               <DialogTrigger asChild>
                 <article className="group text-left cursor-pointer focus:outline-none">
-                  <div className="aspect-[4/5] max-w-[180px] mx-auto bg-secondary border border-border relative overflow-hidden">
+                  <div className="aspect-[4/5] max-w-[270px] mx-auto bg-secondary border border-border relative overflow-hidden">
                     <img
                       src={m.photo}
                       alt={`Portrait of ${m.name}`}
@@ -244,7 +244,7 @@ function Team() {
                       </span>
                     </div>
                   </div>
-                  <div className="mt-4">
+                  <div className="mt-4 max-w-[270px] mx-auto text-right">
                     <div className="font-serif text-xl underline-offset-4 group-hover:underline">
                       {m.name}
                     </div>
