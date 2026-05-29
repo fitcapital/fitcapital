@@ -38,12 +38,12 @@ export function Tombstones() {
       </div>
 
       <div
-        className="mt-14 relative overflow-hidden border-y border-border bg-neutral-200"
+        className="mt-14 relative overflow-hidden border-y border-border bg-[#0a0a0a]"
         aria-label="Client logos"
       >
-        {/* edge fades over the light strip */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-gradient-to-r from-neutral-200 to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-gradient-to-l from-neutral-200 to-transparent" />
+        {/* edge fades over the dark strip */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-gradient-to-r from-[#0a0a0a] to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-gradient-to-l from-[#0a0a0a] to-transparent" />
 
         <div className="marquee-track flex items-center gap-24 py-12 w-max">
           {track.map((logo, i) => (
@@ -52,7 +52,7 @@ export function Tombstones() {
               src={logo.src}
               alt={logo.alt}
               loading="lazy"
-              className="h-14 md:h-20 w-auto object-contain shrink-0"
+              className="h-14 md:h-20 w-auto object-contain shrink-0 brightness-0 invert"
             />
           ))}
         </div>

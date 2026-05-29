@@ -24,7 +24,7 @@ export function SiteHeader() {
           <img
             src={logoUrl}
             alt="Fit Capital"
-            className="h-12 md:h-14 w-auto object-contain"
+            className="h-8 md:h-9 w-auto object-contain"
           />
         </Link>
         <DropdownMenu>
