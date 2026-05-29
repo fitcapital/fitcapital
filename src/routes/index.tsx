@@ -255,7 +255,7 @@ function Team() {
                       </span>
                     </div>
                   </div>
-                  <div className="mt-4 max-w-[270px] mx-auto text-right">
+                  <div className="mt-4 max-w-[270px] mx-auto text-left">
                     <div className="font-serif text-xl underline-offset-4 group-hover:underline">
                       {m.name}
                     </div>
