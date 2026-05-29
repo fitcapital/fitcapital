@@ -10,6 +10,8 @@ import {
   DialogTrigger,
   DialogDescription,
 } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { Linkedin } from "lucide-react";
 import joelPhoto from "@/assets/team-joel.png";
 import chadPhoto from "@/assets/team-chad.png";
 import jonPhoto from "@/assets/team-jon.png";
