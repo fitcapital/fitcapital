@@ -45,14 +45,14 @@ export function Tombstones() {
         <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-gradient-to-r from-neutral-200 to-transparent" />
         <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-gradient-to-l from-neutral-200 to-transparent" />
 
-        <div className="marquee-track flex items-center gap-20 py-10 w-max">
+        <div className="marquee-track flex items-center gap-24 py-12 w-max">
           {track.map((logo, i) => (
             <img
               key={i}
               src={logo.src}
               alt={logo.alt}
               loading="lazy"
-              className="h-8 md:h-10 w-auto object-contain shrink-0 opacity-90 hover:opacity-100 transition-opacity"
+              className="h-14 md:h-20 w-auto object-contain shrink-0"
             />
           ))}
         </div>
