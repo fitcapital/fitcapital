@@ -10,6 +10,8 @@ import {
   DialogTrigger,
   DialogDescription,
 } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { Linkedin } from "lucide-react";
 import joelPhoto from "@/assets/team-joel.png";
 import chadPhoto from "@/assets/team-chad.png";
 import jonPhoto from "@/assets/team-jon.png";
@@ -193,6 +195,7 @@ function Team() {
       name: "Joel Gragg",
       role: "Managing Partner",
       photo: joelPhoto,
+      linkedin: "https://linkedin.com/in/joelgragg",
       bio: [
         "Joel has over two decades of experience in direct lending, banking, and private equity focused on middle-market and technology companies. He has originated and led more than $1 billion in debt capital commitments.",
         "Prior to founding fitcapital, Joel was Managing Director and Head of Stifel Technology Capital, part of Stifel Financial Corp (NYSE: SF). He previously served as Managing Director at ORIX Growth Capital, where he led the West Coast team, and as Business Line Manager at Bridge Bank Technology Banking.",
@@ -204,6 +207,7 @@ function Team() {
       name: "Chad Cochran",
       role: "Managing Partner",
       photo: chadPhoto,
+      linkedin: "https://linkedin.com/in/chadcochran",
       bio: [
         "Chad has over 15 years of technology banking and lending experience across the venture, growth, and middle-market sectors. He has structured and closed more than $1 billion in debt capital commitments.",
         "Prior to fitcapital, Chad led the Bay Area Innovation Economy team at J.P. Morgan and previously served as a Relationship Manager in the Technology and Global Cleantech groups at Wells Fargo.",
@@ -215,6 +219,7 @@ function Team() {
       name: "Jon Weitzel",
       role: "Partner",
       photo: jonPhoto,
+      linkedin: "https://linkedin.com/in/jon-weitzel-4862b1b",
       bio: [
         "Jon Weitzel is a Partner at fitcapital, where he advises growth-stage technology companies on debt capital raising across the full capital stack, including venture debt, private credit, and growth equity. He has more than 25 years of underwriting and investment experience and has participated in 100+ transactions totaling over $1 billion invested, with a particular focus on enterprise software.",
         "Jon's career includes investment and lending roles at White Oak Global Advisors, ORIX Growth Capital, Monroe Capital, and Bridge Bank Technology Banking.",
@@ -277,6 +282,12 @@ function Team() {
                     {m.bio.map((p, i) => (
                       <p key={i}>{p}</p>
                     ))}
+                    <Button variant="outline" size="sm" asChild className="mt-2">
+                      <a href={m.linkedin} target="_blank" rel="noopener noreferrer">
+                        <Linkedin className="w-4 h-4" />
+                        LinkedIn
+                      </a>
+                    </Button>
                   </div>
                 </div>
               </DialogContent>
