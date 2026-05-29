@@ -170,8 +170,8 @@ function WhyUs() {
         <ul className="grid sm:grid-cols-2 gap-px bg-border border border-border">
           {bullets.map((b) => (
             <li key={b} className="bg-card p-6 flex items-start gap-3">
-              <span className="text-gold mt-1">✓</span>
-              <span>{b}</span>
+              <span className="text-gold mt-1 font-bold">✓</span>
+              <span className="font-semibold">{b}</span>
             </li>
           ))}
           <li className="bg-card p-6 sm:col-span-2 border-t border-border">
