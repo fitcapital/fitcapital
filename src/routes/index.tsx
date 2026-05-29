@@ -192,8 +192,7 @@ function Team() {
     {
       name: "Joel Gragg",
       role: "Managing Partner",
-      photo:
-        photo: joelPhoto,
+      photo: joelPhoto,
       bio: [
         "Joel is a Managing Partner at Fit Capital and co-leads the firm's debt advisory practice. Prior to founding Fit Capital, Joel spent his career on the lender side, originating, underwriting, and structuring venture and growth debt facilities for high-growth technology companies.",
         "He has been involved in hundreds of millions of dollars of debt commitments across software, fintech, healthcare technology, and consumer internet, working with both venture-backed and bootstrapped issuers.",
@@ -202,8 +201,7 @@ function Team() {
     {
       name: "Chad Cochran",
       role: "Managing Partner",
-      photo:
-        photo: chadPhoto,
+      photo: chadPhoto,
       bio: [
         "Chad is a Managing Partner at Fit Capital and brings deep experience structuring credit facilities for growth-stage companies. Earlier in his career he held senior origination and underwriting roles at leading venture and specialty lenders.",
         "Chad has executed financings across venture debt, growth term loans, ABL, and warehouse facilities, and works closely with founders and CFOs to align capital structure with the company's operating plan.",
@@ -212,8 +210,7 @@ function Team() {
     {
       name: "Jon Weitzel",
       role: "Partner",
-      photo:
-        photo: jonPhoto,
+      photo: jonPhoto,
       bio: [
         "Jon is a Partner at Fit Capital, focused on structuring and executing debt financings for technology and tech-enabled businesses. Prior to Fit Capital, Jon worked at leading credit funds and venture lenders, evaluating and underwriting debt opportunities across multiple sectors.",
         "He partners with management teams from process kickoff through closing, negotiating terms with banks, private credit funds, and specialty lenders to deliver the best fit for the business.",
