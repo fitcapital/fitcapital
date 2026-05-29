@@ -281,9 +281,6 @@ function Team() {
     </section>
   );
 }
-    </section>
-  );
-}
 
 function CTA() {
   return (
