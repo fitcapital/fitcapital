@@ -282,6 +282,12 @@ function Team() {
                     {m.bio.map((p, i) => (
                       <p key={i}>{p}</p>
                     ))}
+                    <Button variant="outline" size="sm" asChild className="mt-2">
+                      <a href={m.linkedin} target="_blank" rel="noopener noreferrer">
+                        <Linkedin className="w-4 h-4" />
+                        LinkedIn
+                      </a>
+                    </Button>
                   </div>
                 </div>
               </DialogContent>
