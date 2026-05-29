@@ -118,6 +118,7 @@
 @layer utilities {
   .text-balance { text-wrap: balance; }
   .text-gold { color: var(--gold); }
+  .text-lender-gold { color: #f5e6a8; }
   .bg-gradient-hero { background-image: var(--gradient-hero); }
   .bg-gradient-gold { background-image: var(--gradient-gold); }
   .shadow-elegant { box-shadow: var(--shadow-elegant); }
