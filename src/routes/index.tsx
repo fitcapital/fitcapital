@@ -169,14 +169,14 @@ function WhyUs() {
             capital providers underwrite — and we use that to your advantage.
           </p>
         </div>
-        <ul className="grid sm:grid-cols-2 gap-px bg-border border border-border">
+        <ul className="grid sm:grid-cols-2 gap-5">
           {bullets.map((b) => (
-            <li key={b} className="bg-card p-5 flex items-start gap-3">
+            <li key={b} className="bg-card border border-border rounded-sm shadow-elegant p-5 flex items-start gap-3">
               <span className="text-gold mt-1 font-bold">✓</span>
               <span className="font-semibold">{b}</span>
             </li>
           ))}
-          <li className="bg-card p-6 sm:col-span-2 border-t border-border">
+          <li className="bg-card border border-border rounded-sm shadow-elegant p-6 sm:col-span-2">
             <div className="eyebrow">Engagements</div>
             <div className="mt-2 font-serif text-2xl">Target raise $10M – $100M+</div>
             <div className="text-sm text-muted-foreground mt-1">
