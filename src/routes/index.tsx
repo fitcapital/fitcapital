@@ -157,7 +157,7 @@ function WhyUs() {
   ];
   return (
     <section className="py-12 lg:py-16">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 items-start">
         <div>
           <div className="eyebrow">Why Fit Capital</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
