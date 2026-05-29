@@ -124,7 +124,7 @@ function Services() {
     },
   ];
   return (
-    <section id="services" className="py-16 lg:py-20 border-t border-border">
+    <section id="services" className="py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[1fr_2fr] gap-8">
         <div>
           <div className="eyebrow">What We Do</div>
@@ -156,7 +156,7 @@ function WhyUs() {
     "Less management time fundraising",
   ];
   return (
-    <section className="py-16 lg:py-20 border-t border-border">
+    <section className="py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <div className="eyebrow">Why Fit Capital</div>
@@ -229,7 +229,7 @@ function Team() {
     },
   ];
   return (
-    <section id="team" className="py-16 lg:py-20 border-t border-border">
+    <section id="team" className="py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="max-w-2xl">
           <div className="eyebrow">Leadership</div>
@@ -301,7 +301,7 @@ function Team() {
 
 function CTA() {
   return (
-    <section id="contact" className="py-16 lg:py-20 border-t border-border">
+    <section id="contact" className="py-12 lg:py-16">
       <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
         <div className="eyebrow">Start a Conversation</div>
         <h2 className="mt-4 text-4xl md:text-6xl text-balance">
