@@ -146,7 +146,7 @@ function WhyUs() {
         <div>
           <div className="eyebrow">Why fitcapital</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
-            We have sat on the other side of the table.
+            We've sat on the other side of the table.
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed max-w-xl">
 As former lenders, we've completed hundreds of transactions and understand what drives lender decision-making. Stay focused on building your business and let our team manage the capital raise process end-to-end.
