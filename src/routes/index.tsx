@@ -67,7 +67,7 @@ function Hero() {
           <span className="italic text-lender-gold">built by lenders.</span>
         </h1>
         <p className="mt-8 text-lg text-muted-foreground leading-relaxed animate-fade-up md:whitespace-nowrap">
-          Advisors to growth-stage tech companies raising non-dilutive growth capital
+          Helping growth-stage tech companies raising non-dilutive growth capital
         </p>
 
         <dl className="mt-24 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-5">
@@ -100,7 +100,7 @@ function Services() {
     {
       tag: "02",
       title: "Growth Debt",
-      body: "Larger facilities, typically enterprise value or ARR focused, to fund growth, M&A, and other strategic initiatives",
+      body: "Enterprise value and ARR-based capital solutions for growth, acquisitions, and other strategic objectives",
     },
     {
       tag: "03",
