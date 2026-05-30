@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export function Testimonials() {
@@ -26,25 +26,21 @@ export function Testimonials() {
   ];
 
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const scroll = (dir: "left" | "right") => {
     const el = scrollRef.current;
     if (!el) return;
-    const card = el.children[0] as HTMLElement | undefined;
+    const cards = Array.from(el.children) as HTMLElement[];
+    const card = cards[0];
     if (!card) return;
-    const gap = 24;
-    const step = card.offsetWidth + gap;
-    const current = Math.round(el.scrollLeft / step);
-    const maxIndex = quotes.length - 1;
-    const atEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 2;
-    const atStart = el.scrollLeft <= 2;
-    let next: number;
-    if (dir === "right") {
-      next = atEnd ? 0 : Math.min(current + 1, maxIndex);
-    } else {
-      next = atStart ? maxIndex : Math.max(current - 1, 0);
-    }
-    el.scrollTo({ left: next * step, behavior: "smooth" });
+    const next =
+      dir === "right"
+        ? (activeIndex + 1) % quotes.length
+        : (activeIndex - 1 + quotes.length) % quotes.length;
+    const target = cards[next] ?? card;
+    setActiveIndex(next);
+    el.scrollTo({ left: target.offsetLeft - el.offsetLeft, behavior: "smooth" });
   };
 
   return (
