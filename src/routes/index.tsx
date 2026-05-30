@@ -109,17 +109,17 @@ function Services() {
     },
   ];
   return (
-    <section id="services" className="py-12 lg:py-16">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[1fr_2fr] gap-8">
+    <section id="services" className="py-16 lg:py-24">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[1fr_2fr] gap-10">
         <div>
           <div className="eyebrow">What We Do</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
             Specialized focus. Expert guidance.
           </h2>
         </div>
-        <div className="grid gap-3">
+        <div className="grid gap-5">
           {items.map((it) => (
-            <div key={it.tag} className="bg-card border border-border rounded-sm shadow-elegant py-4 px-6 grid md:grid-cols-[80px_1fr] gap-6 items-baseline">
+            <div key={it.tag} className="bg-card border border-border rounded-sm shadow-elegant py-6 px-8 grid md:grid-cols-[80px_1fr] gap-8 items-baseline">
               <div className="font-serif text-2xl text-gold">{it.tag}</div>
               <div>
                 <h3 className="font-serif text-2xl">{it.title}</h3>
