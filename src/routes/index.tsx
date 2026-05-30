@@ -154,9 +154,9 @@ As former lenders, we've completed hundreds of transactions and understand what 
         </div>
         <ul className="grid sm:grid-cols-2 gap-5">
           {bullets.map((b) => (
-            <li key={b} className="bg-white border border-black/10 rounded-sm py-3 px-4 flex items-start gap-3">
-              <span className="text-black mt-1">✓</span>
-              <span className="text-black">{b}</span>
+            <li key={b} className="bg-secondary border border-border rounded-sm py-3 px-4 flex items-start gap-3 shadow-elegant">
+              <span className="text-foreground mt-1">✓</span>
+              <span className="text-foreground">{b}</span>
             </li>
           ))}
           <li className="bg-white border border-black/10 rounded-sm py-3 px-5 sm:col-span-2">
