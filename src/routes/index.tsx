@@ -100,7 +100,7 @@ function Services() {
     {
       tag: "02",
       title: "Growth Debt",
-      body: "Larger facilities from private credit funds, typically enterprise value or ARR focused, to fund growth, M&A, and other strategic initiatives",
+      body: "Larger facilities, typically enterprise value or ARR focused, to fund growth, M&A, and other strategic initiatives",
     },
     {
       tag: "03",
