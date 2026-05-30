@@ -105,7 +105,7 @@ function Services() {
     {
       tag: "03",
       title: "Structured & Sponsor-Backed Capital Solutions",
-      body: "Warehouse, ABL, and bespoke structures for capital-intensive business models.",
+      body: "Bespoke structured hybrid solutions and leverage financing",
     },
   ];
   return (
