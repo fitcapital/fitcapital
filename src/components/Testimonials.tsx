@@ -26,22 +26,25 @@ export function Testimonials() {
   ];
 
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
-
-  const checkScroll = () => {
-    const el = scrollRef.current;
-    if (!el) return;
-    setCanScrollLeft(el.scrollLeft > 0);
-    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 1);
-  };
 
   const scroll = (dir: "left" | "right") => {
     const el = scrollRef.current;
     if (!el) return;
     const cardWidth = 420 + 24; // card width + gap
-    el.scrollBy({ left: dir === "left" ? -cardWidth : cardWidth, behavior: "smooth" });
-    setTimeout(checkScroll, 300);
+    const maxScroll = el.scrollWidth - el.clientWidth;
+    if (dir === "right") {
+      if (el.scrollLeft >= maxScroll - 1) {
+        el.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        el.scrollBy({ left: cardWidth, behavior: "smooth" });
+      }
+    } else {
+      if (el.scrollLeft <= 1) {
+        el.scrollTo({ left: maxScroll, behavior: "smooth" });
+      } else {
+        el.scrollBy({ left: -cardWidth, behavior: "smooth" });
+      }
+    }
   };
 
   return (
