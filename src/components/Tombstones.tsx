@@ -30,9 +30,6 @@ export function Tombstones() {
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
             Partnering with exceptional companies.
           </h2>
-          <p className="mt-4 text-muted-foreground">
-            A representative sample of companies we've worked with
-          </p>
         </div>
       </div>
 
