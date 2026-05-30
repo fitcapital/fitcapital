@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "fitcapital is a debt-focused investment bank built by lenders. We advise growth-stage companies on venture debt, growth debt, and structured capital from $10M–$100M+.",
+          "fitcapital is a debt-focused investment bank built by lenders. We advise growth-stage companies on venture debt, growth debt, and structured capital solutions from $10M–$100M+.",
       },
       { property: "og:title", content: "fitcapital — Growth Capital Advisors" },
       {
@@ -43,7 +43,7 @@ export const Route = createFileRoute("/")({
           "@type": "FinancialService",
           name: "fitcapital",
           description:
-            "Debt-focused investment bank advising growth-stage companies on venture debt, growth debt, and structured capital.",
+            "Debt-focused investment bank advising growth-stage companies on venture debt, growth debt, and structured capital solutions.",
           areaServed: "United States",
         }),
       },
