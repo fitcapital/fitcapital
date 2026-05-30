@@ -155,9 +155,10 @@ function WhyUs() {
 As former lenders, we've completed hundreds of transactions and understand what drives lender decision-making. Stay focused on building your business and let our team manage the capital raise process end-to-end.
           </p>
         </div>
-        <ul className="grid sm:grid-cols-2 gap-6">
+        <ul className="grid sm:grid-cols-2 gap-3">
           {bullets.map((b) => (
-            <li key={b} className="bg-foreground/85 border border-border rounded-sm py-4 px-5 flex items-start gap-4 shadow-elegant">
+            <li key={b} className="bg-foreground/85 border border-border rounded-sm py-3 px-4 flex items-start gap-3 shadow-elegant">
+
               <span className="text-background mt-1">✓</span>
               <span className="text-background">{b}</span>
             </li>
