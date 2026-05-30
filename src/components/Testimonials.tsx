@@ -71,10 +71,10 @@ export function Testimonials() {
           {quotes.map((q, i) => (
             <figure
               key={i}
-              className="bg-card border border-border p-6 flex flex-col gap-5 rounded-sm shadow-elegant w-[360px] md:w-[420px] shrink-0"
+              className="bg-card border border-border p-5 md:p-6 flex flex-col gap-4 md:gap-5 rounded-sm shadow-elegant w-[280px] sm:w-[360px] md:w-[420px] shrink-0"
             >
-              <div className="text-gold font-serif text-5xl leading-none">"</div>
-              <blockquote className="text-base leading-relaxed text-foreground/90 flex-1">
+              <div className="text-gold font-serif text-4xl md:text-5xl leading-none">"</div>
+              <blockquote className="text-sm md:text-base leading-relaxed text-foreground/90 flex-1">
                 {q.quote}
               </blockquote>
               <figcaption className="mt-auto pt-4 border-t border-border">
