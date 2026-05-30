@@ -67,7 +67,7 @@ export function Testimonials() {
 
         <div
           ref={scrollRef}
-          onScroll={checkScroll}
+          
           className="flex items-stretch gap-6 py-10 overflow-x-auto scrollbar-hide scroll-smooth px-6 lg:px-10"
           style={{ scrollbarWidth: "none" }}
         >
