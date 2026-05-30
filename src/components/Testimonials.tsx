@@ -83,25 +83,25 @@ export function Testimonials() {
             </figure>
           ))}
         </div>
-      </div>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 mt-6 flex gap-3 justify-end">
-        <button
-          onClick={() => scroll("left")}
-          disabled={!canScrollLeft}
-          aria-label="Previous testimonial"
-          className="inline-flex items-center justify-center w-14 h-14 rounded-full border-2 border-background bg-foreground text-background hover:bg-background hover:text-foreground transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
-        >
-          <ChevronLeft size={24} strokeWidth={2.5} />
-        </button>
-        <button
-          onClick={() => scroll("right")}
-          disabled={!canScrollRight}
-          aria-label="Next testimonial"
-          className="inline-flex items-center justify-center w-14 h-14 rounded-full border-2 border-background bg-foreground text-background hover:bg-background hover:text-foreground transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
-        >
-          <ChevronRight size={24} strokeWidth={2.5} />
-        </button>
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 pb-6 flex gap-3 justify-end">
+          <button
+            onClick={() => scroll("left")}
+            disabled={!canScrollLeft}
+            aria-label="Previous testimonial"
+            className="inline-flex items-center justify-center w-14 h-14 rounded-full border-2 border-background bg-foreground text-background hover:bg-background hover:text-foreground transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+          >
+            <ChevronLeft size={24} strokeWidth={2.5} />
+          </button>
+          <button
+            onClick={() => scroll("right")}
+            disabled={!canScrollRight}
+            aria-label="Next testimonial"
+            className="inline-flex items-center justify-center w-14 h-14 rounded-full border-2 border-background bg-foreground text-background hover:bg-background hover:text-foreground transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+          >
+            <ChevronRight size={24} strokeWidth={2.5} />
+          </button>
+        </div>
       </div>
     </section>
   );
