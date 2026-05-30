@@ -291,7 +291,7 @@ function CTA() {
           Considering a capital raise?
         </h2>
         <p className="mt-6 text-muted-foreground max-w-xl mx-auto">
-          Reach out to explore fit, structure, and market terms for your business
+          Reach out to explore potential fit, structure, and market terms for your business
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <a
