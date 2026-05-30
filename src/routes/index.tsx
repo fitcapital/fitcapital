@@ -104,7 +104,7 @@ function Services() {
     },
     {
       tag: "03",
-      title: "Structured Capital",
+      title: "Structured & Sponsor-Backed Capital Solutions",
       body: "Warehouse, ABL, and bespoke structures for capital-intensive business models.",
     },
   ];
