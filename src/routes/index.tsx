@@ -154,15 +154,15 @@ As former lenders, we've completed hundreds of transactions and understand what 
         </div>
         <ul className="grid sm:grid-cols-2 gap-5">
           {bullets.map((b) => (
-            <li key={b} className="bg-secondary border border-border rounded-sm py-3 px-4 flex items-start gap-3 shadow-elegant">
-              <span className="text-foreground mt-1">✓</span>
-              <span className="text-foreground">{b}</span>
+            <li key={b} className="bg-muted-foreground border border-border rounded-sm py-3 px-4 flex items-start gap-3 shadow-elegant">
+              <span className="text-background mt-1">✓</span>
+              <span className="text-background">{b}</span>
             </li>
           ))}
-          <li className="bg-secondary border border-border rounded-sm py-3 px-5 sm:col-span-2 shadow-elegant">
-            <div className="text-foreground uppercase tracking-[0.22em] text-[0.7rem] font-medium">Engagements</div>
-            <div className="mt-2 font-serif text-2xl text-foreground">Target raise $10M – $100M+</div>
-            <div className="text-sm text-muted-foreground mt-1">
+          <li className="bg-muted-foreground border border-border rounded-sm py-3 px-5 sm:col-span-2 shadow-elegant">
+            <div className="text-background uppercase tracking-[0.22em] text-[0.7rem] font-medium">Engagements</div>
+            <div className="mt-2 font-serif text-2xl text-background">Target raise $10M – $100M+</div>
+            <div className="text-sm text-background/70 mt-1">
               VC or PE-backed
             </div>
           </li>
