@@ -105,7 +105,7 @@ function Services() {
     {
       tag: "03",
       title: "Structured & Sponsor-Backed Capital Solutions",
-      body: "Bespoke structured hybrid solutions and leverage financing",
+      body: "Bespoke structured hybrid capital solutions and leverage sponsor finance",
     },
   ];
   return (
