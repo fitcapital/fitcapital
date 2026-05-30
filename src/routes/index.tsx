@@ -286,7 +286,7 @@ function CTA() {
   return (
     <section id="contact" className="py-12 lg:py-16">
       <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
-        <div className="eyebrow">Start a Conversation</div>
+        
         <h2 className="mt-4 text-4xl md:text-6xl text-balance">
           Considering a capital raise?
         </h2>
