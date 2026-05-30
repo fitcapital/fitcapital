@@ -15,7 +15,7 @@ export function Testimonials() {
     },
     {
       quote:
-        "Anyone can put together an outreach list, but having fitcapital on our side — a team that has completed hundreds of transactions both as advisors and lenders — was a major differentiator. Their market knowledge and ability to navigate lender diligence and negotiations was unmatched.",
+        "Anyone can put together an outreach list, but having fitcapital on our side was a major differentiator. Their market knowledge and ability to navigate lender diligence and negotiations was unmatched.",
       name: "Founder-CEO, Pipedreams",
     },
     {
