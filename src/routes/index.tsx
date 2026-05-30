@@ -104,7 +104,7 @@ function Services() {
     },
     {
       tag: "03",
-      title: "Structured Finance",
+      title: "Structured Capital",
       body: "Warehouse, ABL, and bespoke structures for capital-intensive business models.",
     },
   ];
