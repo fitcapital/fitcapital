@@ -56,10 +56,6 @@ export function Tombstones() {
           ))}
         </div>
       </div>
-
-      <p className="mt-6 max-w-7xl mx-auto px-6 lg:px-10 text-xs text-muted-foreground">
-        *Partial transaction list. Selected for illustration.
-      </p>
     </section>
   );
 }
