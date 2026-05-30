@@ -20,10 +20,10 @@ export function SiteHeader() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-28 flex items-center justify-between">
-        <Link to="/" className="flex items-center group" aria-label="Fit Capital home">
+        <Link to="/" className="flex items-center group" aria-label="fitcapital home">
           <img
             src={logoUrl}
-            alt="Fit Capital"
+            alt="fitcapital"
             className="h-[3.2rem] md:h-[3.6rem] w-auto object-contain"
           />
         </Link>
@@ -55,7 +55,7 @@ export function SiteFooter() {
     <footer className="border-t border-border mt-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12 grid gap-10 md:grid-cols-4 text-sm">
         <div className="md:col-span-2">
-          <img src={logoUrl} alt="Fit Capital" className="h-9 w-auto object-contain" />
+          <img src={logoUrl} alt="fitcapital" className="h-9 w-auto object-contain" />
           <p className="mt-4 text-muted-foreground max-w-sm">
             A debt-focused investment bank built by lenders. Advising growth-stage
             companies on venture debt, growth debt, and structured finance.
