@@ -217,7 +217,7 @@ function Team() {
         <div className="max-w-2xl">
           <div className="eyebrow">Leadership</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
-            Senior bankers on every engagement.
+            Senior partners lead every engagement
           </h2>
         </div>
         <div className="mt-10 grid sm:grid-cols-2 md:grid-cols-3 gap-5">
