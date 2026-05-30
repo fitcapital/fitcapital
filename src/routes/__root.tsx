@@ -77,10 +77,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Fit Capital — Growth Capital Advisors" },
+      { title: "fitcapital — Growth Capital Advisors" },
       { name: "description", content: "Debt-focused investment bank built by lenders." },
-      { name: "author", content: "Fit Capital" },
-      { property: "og:site_name", content: "Fit Capital" },
+      { name: "author", content: "fitcapital" },
+      { property: "og:site_name", content: "fitcapital" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
