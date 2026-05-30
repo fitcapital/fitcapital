@@ -163,7 +163,7 @@ As former lenders, we've completed hundreds of transactions and understand what 
               <span className="text-background">{b}</span>
             </li>
           ))}
-          <li className="bg-foreground/85 border border-border rounded-sm py-4 px-6 sm:col-span-2 shadow-elegant">
+          <li className="bg-foreground/85 border border-border rounded-sm py-3 px-4 sm:col-span-2 shadow-elegant">
             <div className="text-background uppercase tracking-[0.22em] text-[0.7rem] font-medium">Engagements</div>
             <div className="mt-2 font-serif text-2xl text-background">Target raise $10M – $100M+</div>
             <div className="text-sm text-background/70 mt-1">
