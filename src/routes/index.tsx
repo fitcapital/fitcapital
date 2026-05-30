@@ -109,17 +109,19 @@ function Services() {
     },
   ];
   return (
-    <section id="services" className="py-16 lg:py-24">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[1fr_2fr] gap-10">
+    <section id="services" className="py-10 lg:py-14">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[1fr_2fr] gap-8">
+
         <div>
           <div className="eyebrow">What We Do</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
             Specialized focus. Expert guidance.
           </h2>
         </div>
-        <div className="grid gap-5">
+        <div className="grid gap-3">
           {items.map((it) => (
-            <div key={it.tag} className="bg-card border border-border rounded-sm shadow-elegant py-6 px-8 grid md:grid-cols-[80px_1fr] gap-8 items-baseline">
+            <div key={it.tag} className="bg-card border border-border rounded-sm shadow-elegant py-4 px-6 grid md:grid-cols-[80px_1fr] gap-6 items-baseline">
+
               <div className="font-serif text-2xl text-gold">{it.tag}</div>
               <div>
                 <h3 className="font-serif text-2xl">{it.title}</h3>
@@ -141,8 +143,9 @@ function WhyUs() {
     "Less management time fundraising",
   ];
   return (
-    <section className="py-16 lg:py-24">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-start">
+    <section className="py-10 lg:py-14">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-10 items-start">
+
         <div>
           <div className="eyebrow">Why fitcapital</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
@@ -152,14 +155,15 @@ function WhyUs() {
 As former lenders, we've completed hundreds of transactions and understand what drives lender decision-making. Stay focused on building your business and let our team manage the capital raise process end-to-end.
           </p>
         </div>
-        <ul className="grid sm:grid-cols-2 gap-6">
+        <ul className="grid sm:grid-cols-2 gap-3">
           {bullets.map((b) => (
-            <li key={b} className="bg-foreground/85 border border-border rounded-sm py-4 px-5 flex items-start gap-4 shadow-elegant">
+            <li key={b} className="bg-foreground/85 border border-border rounded-sm py-3 px-4 flex items-start gap-3 shadow-elegant">
+
               <span className="text-background mt-1">✓</span>
               <span className="text-background">{b}</span>
             </li>
           ))}
-          <li className="bg-foreground/85 border border-border rounded-sm py-4 px-6 sm:col-span-2 shadow-elegant">
+          <li className="bg-foreground/85 border border-border rounded-sm py-3 px-4 sm:col-span-2 shadow-elegant">
             <div className="text-background uppercase tracking-[0.22em] text-[0.7rem] font-medium">Engagements</div>
             <div className="mt-2 font-serif text-2xl text-background">Target raise $10M – $100M+</div>
             <div className="text-sm text-background/70 mt-1">
