@@ -214,12 +214,10 @@ function Team() {
   return (
     <section id="team" className="py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="max-w-2xl">
           <div className="eyebrow">Leadership</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
             Senior partners lead every engagement
           </h2>
-        </div>
         <div className="mt-10 grid sm:grid-cols-2 md:grid-cols-3 gap-5">
           {members.map((m) => (
             <Dialog key={m.name}>
