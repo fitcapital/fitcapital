@@ -11,8 +11,8 @@ import {
 const NAV_LINKS = [
   { href: "#services", label: "Services" },
   { href: "#transactions", label: "Clients" },
-  { href: "#team", label: "Team" },
   { href: "#testimonials", label: "Testimonials" },
+  { href: "#team", label: "Team" },
   { href: "#contact", label: "Contact" },
 ];
 
