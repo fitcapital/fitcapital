@@ -114,7 +114,7 @@ function Services() {
         <div>
           <div className="eyebrow">What We Do</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
-            Specialized focus. Expert Guidance
+            Specialized focus. Expert guidance.
           </h2>
         </div>
         <div className="grid gap-3">
