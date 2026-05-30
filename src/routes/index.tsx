@@ -109,8 +109,9 @@ function Services() {
     },
   ];
   return (
-    <section id="services" className="py-16 lg:py-24">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[1fr_2fr] gap-10">
+    <section id="services" className="py-10 lg:py-14">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[1fr_2fr] gap-8">
+
         <div>
           <div className="eyebrow">What We Do</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
