@@ -155,21 +155,19 @@ function WhyUs() {
 As former lenders, we've completed hundreds of transactions and understand what drives lender decision-making. Stay focused on building your business and let our team manage the capital raise process end-to-end.
           </p>
         </div>
-        <div className="bg-white border border-border rounded-sm p-6 shadow-elegant">
-          <ul className="grid sm:grid-cols-2 gap-3">
+        <div>
+          <div className="grid sm:grid-cols-2 gap-x-10">
             {bullets.map((b) => (
-              <li key={b} className="flex items-start gap-3 text-black">
-                <span className="mt-1">•</span>
-                <span>{b}</span>
-              </li>
+              <div key={b} className="flex items-start gap-3 py-3 border-b border-border">
+                <span className="text-muted-foreground mt-0.5">•</span>
+                <span className="text-foreground">{b}</span>
+              </div>
             ))}
-          </ul>
-          <div className="mt-4 pt-4 border-t border-gray-200">
-            <div className="uppercase tracking-[0.22em] text-[0.7rem] text-gray-500">Engagements</div>
-            <div className="mt-1 font-serif text-2xl text-black">Target raise $10M – $100M+</div>
-            <div className="text-sm text-gray-500 mt-1">
-              VC or PE-backed
-            </div>
+          </div>
+          <div className="mt-6 pt-4 border-t border-border flex flex-wrap items-baseline gap-x-6 gap-y-1">
+            <span className="uppercase tracking-[0.22em] text-[0.7rem] text-muted-foreground">Engagements</span>
+            <span className="font-serif text-xl text-foreground">Target raise $10M – $100M+</span>
+            <span className="text-sm text-muted-foreground">VC or PE-backed</span>
           </div>
         </div>
       </div>
