@@ -71,7 +71,7 @@ function Hero() {
         </p>
 
         <dl className="mt-24 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-5">
-          {[
+      {[
             ["60+", "Years Experience"],
             ["150+", "Transactions"],
             ["250+", "Capital Partners"],
