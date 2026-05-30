@@ -161,7 +161,7 @@ As former lenders, we've completed hundreds of transactions and understand what 
           ))}
           <li className="bg-white border border-black/10 rounded-sm p-6 sm:col-span-2">
             <div className="text-black uppercase tracking-[0.22em] text-[0.7rem] font-medium">Engagements</div>
-            <div className="mt-2 font-serif text-2xl text-black">Target raise $10M – $100M+</div>
+            <div className="mt-2 font-serif text-2xl text-black font-bold">Target raise $10M – $100M+</div>
             <div className="text-sm text-black/70 mt-1">
               VC or PE-backed
             </div>
