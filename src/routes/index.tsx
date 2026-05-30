@@ -119,7 +119,7 @@ function Services() {
         </div>
         <div className="grid gap-3">
           {items.map((it) => (
-            <div key={it.tag} className="bg-card border border-border rounded-sm shadow-elegant p-6 grid md:grid-cols-[80px_1fr] gap-6 items-baseline">
+            <div key={it.tag} className="bg-card border border-border rounded-sm shadow-elegant py-4 px-6 grid md:grid-cols-[80px_1fr] gap-6 items-baseline">
               <div className="font-serif text-2xl text-gold">{it.tag}</div>
               <div>
                 <h3 className="font-serif text-2xl">{it.title}</h3>
@@ -154,12 +154,12 @@ As former lenders, we've completed hundreds of transactions and understand what 
         </div>
         <ul className="grid sm:grid-cols-2 gap-5">
           {bullets.map((b) => (
-            <li key={b} className="bg-white border border-black/10 rounded-sm p-4 flex items-start gap-3">
+            <li key={b} className="bg-white border border-black/10 rounded-sm py-3 px-4 flex items-start gap-3">
               <span className="text-black mt-1">✓</span>
               <span className="text-black">{b}</span>
             </li>
           ))}
-          <li className="bg-white border border-black/10 rounded-sm p-5 sm:col-span-2">
+          <li className="bg-white border border-black/10 rounded-sm py-3 px-5 sm:col-span-2">
             <div className="text-black uppercase tracking-[0.22em] text-[0.7rem] font-medium">Engagements</div>
             <div className="mt-2 font-serif text-2xl text-black">Target raise $10M – $100M+</div>
             <div className="text-sm text-black/70 mt-1">
