@@ -57,7 +57,7 @@ function Hero() {
     <section className="relative pt-32 md:pt-40 pb-20 md:pb-28 bg-gradient-hero overflow-hidden">
       <div className="absolute inset-0 pointer-events-none opacity-[0.04] [background-image:linear-gradient(var(--color-foreground)_1px,transparent_1px),linear-gradient(90deg,var(--color-foreground)_1px,transparent_1px)] [background-size:64px_64px]" />
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
-        <h1 className="font-serif text-6xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] text-balance animate-fade-up mt-12 md:mt-0">
+        <h1 className="font-serif text-7xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] text-balance animate-fade-up mt-12 md:mt-0">
           <span className="text-foreground">
             A debt-focused
             <br />
@@ -70,7 +70,7 @@ function Hero() {
           Advisors to growth-stage tech companies raising non-dilutive growth capital
         </p>
 
-        <dl className="mt-32 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-5">
+        <dl className="mt-36 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-5">
           {[
             ["60+", "Years Experience"],
             ["150+", "Transactions"],
