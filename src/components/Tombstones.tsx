@@ -31,8 +31,7 @@ export function Tombstones() {
             Partnering with exceptional companies.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            A representative sample of companies our team has advised across
-            venture debt, growth debt, and structured finance.
+            A representative sample of companies our team has advised
           </p>
         </div>
       </div>
