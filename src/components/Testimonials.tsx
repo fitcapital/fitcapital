@@ -90,7 +90,6 @@ export function Testimonials() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10 pb-6 flex gap-3 justify-end">
           <button
             onClick={() => scroll("left")}
-            disabled={!canScrollLeft}
             aria-label="Previous testimonial"
             className="inline-flex items-center justify-center w-11 h-11 rounded-full border-2 border-background bg-foreground text-background hover:bg-background hover:text-foreground transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
           >
