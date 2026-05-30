@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export function Testimonials() {
@@ -26,22 +26,25 @@ export function Testimonials() {
   ];
 
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
-
-  const checkScroll = () => {
-    const el = scrollRef.current;
-    if (!el) return;
-    setCanScrollLeft(el.scrollLeft > 0);
-    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 1);
-  };
 
   const scroll = (dir: "left" | "right") => {
     const el = scrollRef.current;
     if (!el) return;
     const cardWidth = 420 + 24; // card width + gap
-    el.scrollBy({ left: dir === "left" ? -cardWidth : cardWidth, behavior: "smooth" });
-    setTimeout(checkScroll, 300);
+    const maxScroll = el.scrollWidth - el.clientWidth;
+    if (dir === "right") {
+      if (el.scrollLeft >= maxScroll - 1) {
+        el.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        el.scrollBy({ left: cardWidth, behavior: "smooth" });
+      }
+    } else {
+      if (el.scrollLeft <= 1) {
+        el.scrollTo({ left: maxScroll, behavior: "smooth" });
+      } else {
+        el.scrollBy({ left: -cardWidth, behavior: "smooth" });
+      }
+    }
   };
 
   return (
@@ -64,7 +67,7 @@ export function Testimonials() {
 
         <div
           ref={scrollRef}
-          onScroll={checkScroll}
+          
           className="flex items-stretch gap-6 py-10 overflow-x-auto scrollbar-hide scroll-smooth px-6 lg:px-10"
           style={{ scrollbarWidth: "none" }}
         >
@@ -87,7 +90,6 @@ export function Testimonials() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10 pb-6 flex gap-3 justify-end">
           <button
             onClick={() => scroll("left")}
-            disabled={!canScrollLeft}
             aria-label="Previous testimonial"
             className="inline-flex items-center justify-center w-11 h-11 rounded-full border-2 border-background bg-foreground text-background hover:bg-background hover:text-foreground transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
           >
@@ -95,7 +97,6 @@ export function Testimonials() {
           </button>
           <button
             onClick={() => scroll("right")}
-            disabled={!canScrollRight}
             aria-label="Next testimonial"
             className="inline-flex items-center justify-center w-11 h-11 rounded-full border-2 border-background bg-foreground text-background hover:bg-background hover:text-foreground transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
           >
