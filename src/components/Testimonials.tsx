@@ -90,7 +90,7 @@ export function Testimonials() {
           onClick={() => scroll("left")}
           disabled={!canScrollLeft}
           aria-label="Previous testimonial"
-          className="inline-flex items-center justify-center w-14 h-14 rounded-full border-2 border-foreground/20 bg-card text-foreground hover:bg-foreground hover:text-background transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+          className="inline-flex items-center justify-center w-14 h-14 rounded-full border-2 border-background bg-foreground text-background hover:bg-background hover:text-foreground transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
         >
           <ChevronLeft size={24} strokeWidth={2.5} />
         </button>
@@ -98,7 +98,7 @@ export function Testimonials() {
           onClick={() => scroll("right")}
           disabled={!canScrollRight}
           aria-label="Next testimonial"
-          className="inline-flex items-center justify-center w-14 h-14 rounded-full border-2 border-foreground/20 bg-card text-foreground hover:bg-foreground hover:text-background transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+          className="inline-flex items-center justify-center w-14 h-14 rounded-full border-2 border-background bg-foreground text-background hover:bg-background hover:text-foreground transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
         >
           <ChevronRight size={24} strokeWidth={2.5} />
         </button>
