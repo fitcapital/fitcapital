@@ -55,7 +55,7 @@ export function Testimonials() {
       </div>
 
       <div
-        className="mt-10 relative border-y border-border"
+        className="mt-10 relative border-b border-border"
         aria-label="Client testimonials"
       >
         <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-gradient-to-r from-background to-transparent" />
