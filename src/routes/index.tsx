@@ -118,9 +118,10 @@ function Services() {
             Specialized focus. Expert guidance.
           </h2>
         </div>
-        <div className="grid gap-5">
+        <div className="grid gap-3">
           {items.map((it) => (
-            <div key={it.tag} className="bg-card border border-border rounded-sm shadow-elegant py-6 px-8 grid md:grid-cols-[80px_1fr] gap-8 items-baseline">
+            <div key={it.tag} className="bg-card border border-border rounded-sm shadow-elegant py-4 px-6 grid md:grid-cols-[80px_1fr] gap-6 items-baseline">
+
               <div className="font-serif text-2xl text-gold">{it.tag}</div>
               <div>
                 <h3 className="font-serif text-2xl">{it.title}</h3>
