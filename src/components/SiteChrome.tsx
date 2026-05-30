@@ -58,7 +58,7 @@ export function SiteFooter() {
           <img src={logoUrl} alt="fitcapital" className="h-9 w-auto object-contain" />
           <p className="mt-4 text-muted-foreground max-w-sm">
             A debt-focused investment bank built by lenders. Advising growth-stage
-            companies on venture debt, growth debt, and structured finance.
+            companies on venture debt, growth debt, and structured capital.
           </p>
         </div>
         <div>
