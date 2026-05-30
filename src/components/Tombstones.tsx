@@ -31,7 +31,7 @@ export function Tombstones() {
             Partnering with exceptional companies.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            A representative sample of companies our team has advised
+            A representative sample of companies we've advised
           </p>
         </div>
       </div>
