@@ -66,7 +66,7 @@ function Hero() {
           <br />
           <span className="italic text-lender-gold">built by lenders.</span>
         </h1>
-        <p className="mt-8 text-lg text-muted-foreground leading-relaxed animate-fade-up whitespace-nowrap">
+        <p className="mt-8 text-lg text-muted-foreground leading-relaxed animate-fade-up md:whitespace-nowrap">
           Advisors to growth-stage tech companies raising non-dilutive growth capital
         </p>
 
