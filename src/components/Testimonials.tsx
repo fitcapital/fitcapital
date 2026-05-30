@@ -2,7 +2,7 @@ export function Testimonials() {
   const quotes = [
     {
       quote:
-        "Fit Capital ran a tight, efficient process and delivered terms that materially beat our internal benchmark. They negotiated like they were still on the lender side of the table.",
+        "fitcapital ran a tight, efficient process and delivered terms that materially beat our internal benchmark. They negotiated like they were still on the lender side of the table.",
       name: "Chief Financial Officer",
       role: "Series D SaaS Company",
     },

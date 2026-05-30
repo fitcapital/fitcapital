@@ -19,13 +19,13 @@ import jonPhoto from "@/assets/team-jon.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Fit Capital — Debt-Focused Investment Bank for Growth Companies" },
+      { title: "fitcapital — Debt-Focused Investment Bank for Growth Companies" },
       {
         name: "description",
         content:
-          "Fit Capital is a debt-focused investment bank built by lenders. We advise growth-stage companies on venture debt, growth debt, and structured finance from $10M–$100M+.",
+          "fitcapital is a debt-focused investment bank built by lenders. We advise growth-stage companies on venture debt, growth debt, and structured finance from $10M–$100M+.",
       },
-      { property: "og:title", content: "Fit Capital — Growth Capital Advisors" },
+      { property: "og:title", content: "fitcapital — Growth Capital Advisors" },
       {
         property: "og:description",
         content:
@@ -41,7 +41,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FinancialService",
-          name: "Fit Capital",
+          name: "fitcapital",
           description:
             "Debt-focused investment bank advising growth-stage companies on venture debt, growth debt, and structured finance.",
           areaServed: "United States",
@@ -144,7 +144,7 @@ function WhyUs() {
     <section className="py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 items-start">
         <div>
-          <div className="eyebrow">Why Fit Capital</div>
+          <div className="eyebrow">Why fitcapital</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
             We have sat on the other side of the table.
           </h2>
