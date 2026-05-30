@@ -49,7 +49,7 @@ export function Testimonials() {
         <div className="max-w-2xl">
           <div className="eyebrow">In Their Words</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
-            Trusted by operators and boards.
+            Trusted by operators and investors.
           </h2>
         </div>
       </div>
