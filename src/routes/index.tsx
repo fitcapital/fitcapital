@@ -159,7 +159,7 @@ As former lenders, we've completed hundreds of transactions and understand what 
           <ul className="grid sm:grid-cols-2 gap-3">
             {bullets.map((b) => (
               <li key={b} className="flex items-start gap-3 text-black">
-                <span className="mt-1">✓</span>
+                <span className="mt-1">•</span>
                 <span>{b}</span>
               </li>
             ))}
