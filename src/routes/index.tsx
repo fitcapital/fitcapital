@@ -149,7 +149,7 @@ function WhyUs() {
             We have sat on the other side of the table.
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed max-w-xl">
-            Stay focused on building your business. As an experienced team of former lenders, we manage the capital raise process for growth-stage tech companies from start to finish. Having worked on both sides of the table across hundreds of venture debt and growth capital transactions, we understand how capital providers think and use that to your advantage.
+            Stay focused on building your business. As an experienced team of former lenders, we manage the capital raise process from start to finish. Having completed hundreds of venture debt and growth capital transactions, we understand how capital providers think and use that to your advantage.
           </p>
         </div>
         <ul className="grid sm:grid-cols-2 gap-5">
