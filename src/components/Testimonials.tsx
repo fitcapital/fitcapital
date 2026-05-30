@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export function Testimonials() {
