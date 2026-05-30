@@ -143,8 +143,9 @@ function WhyUs() {
     "Less management time fundraising",
   ];
   return (
-    <section className="py-16 lg:py-24">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-start">
+    <section className="py-10 lg:py-14">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-10 items-start">
+
         <div>
           <div className="eyebrow">Why fitcapital</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
