@@ -163,7 +163,7 @@ function WhyUs() {
             <div className="text-black uppercase tracking-[0.22em] text-[0.7rem] font-medium">Engagements</div>
             <div className="mt-2 font-serif text-2xl text-black">Target raise $10M – $100M+</div>
             <div className="text-sm text-black/70 mt-1">
-              VC-backed, PE-backed, or bootstrapped
+              VC or PE-backed
             </div>
           </li>
         </ul>
