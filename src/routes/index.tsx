@@ -159,7 +159,7 @@ As former lenders, we've completed hundreds of transactions and understand what 
               <span className="font-semibold text-black">{b}</span>
             </li>
           ))}
-          <li className="bg-[#d4d4d8] border border-black/10 rounded-sm p-6 sm:col-span-2">
+          <li className="bg-[#f5e6a8] border border-black/10 rounded-sm p-6 sm:col-span-2">
             <div className="text-black uppercase tracking-[0.22em] text-[0.7rem] font-medium">Engagements</div>
             <div className="mt-2 font-serif text-2xl text-black">Target raise $10M – $100M+</div>
             <div className="text-sm text-black/70 mt-1">
