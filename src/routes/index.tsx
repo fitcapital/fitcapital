@@ -95,7 +95,7 @@ function Services() {
     {
       tag: "01",
       title: "Venture Debt",
-      body: "Non-dilutive growth capital from banks and specialty lenders, structured to extend runway.",
+      body: "Non-dilutive growth capital from banks and non-bank venture lenders, structured to extend runway.",
     },
     {
       tag: "02",
