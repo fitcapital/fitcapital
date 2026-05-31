@@ -158,15 +158,15 @@ As former lenders, we've completed hundreds of transactions and understand what 
         <div>
           <div className="space-y-0">
             {bullets.map((b) => (
-              <div key={b} className="flex items-start gap-4 py-5 border-b border-border/40">
+              <div key={b} className="flex items-start gap-4 py-2 border-b border-border/40">
                 <span className="text-muted-foreground mt-1">•</span>
-                <span className="text-foreground text-lg leading-relaxed">{b}</span>
+                <span className="text-foreground text-lg leading-snug">{b}</span>
               </div>
             ))}
           </div>
-          <div className="mt-10 pt-5 border-t border-border/40">
-            <div className="flex flex-wrap items-baseline gap-x-8 gap-y-2">
-              <span className="uppercase tracking-[0.22em] text-[0.7rem] text-muted-foreground">Engagements</span>
+          <div className="mt-8 pt-5 border-t border-border/40">
+            <div className="uppercase tracking-[0.22em] text-[0.7rem] text-muted-foreground">Engagements</div>
+            <div className="mt-2 flex flex-wrap items-baseline gap-x-8 gap-y-2">
               <span className="text-foreground">Target raise $10M – $100M+</span>
               <span className="text-sm text-muted-foreground">VC or PE-backed</span>
             </div>
