@@ -65,8 +65,6 @@ function Hero() {
           </span>
           <br />
           <span className="italic text-lender-gold">built by lenders.</span>
-          <br />
-          <span className="italic text-lender-gold">Armanino Sucks!!!!</span>
         </h1>
         <p className="mt-8 text-lg text-muted-foreground leading-relaxed animate-fade-up md:whitespace-nowrap">
           Helping growth-stage tech companies raising non-dilutive growth capital
