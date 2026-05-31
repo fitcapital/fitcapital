@@ -167,7 +167,7 @@ As former lenders, we've completed hundreds of transactions and understand what 
           <div className="mt-8 pt-5 border-t border-border/40">
             <div className="uppercase tracking-[0.22em] text-[0.7rem] text-muted-foreground">Engagements</div>
             <div className="mt-2 space-y-1">
-              <div className="text-foreground">Target raise $10M – $100M+</div>
+              <div className="text-foreground">Target raise $13.5M – $135M+</div>
               <div className="text-sm text-muted-foreground">VC or PE-backed</div>
             </div>
           </div>
