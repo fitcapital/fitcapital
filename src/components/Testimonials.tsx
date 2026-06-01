@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { ChevronLeft, ChevronRight, Play } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import obsidianVideo from "@/assets/obsidian-testimonial.mp4.asset.json";
 
 type Testimonial =
@@ -119,51 +119,17 @@ export function Testimonials() {
 }
 
 function VideoCard({ src, name }: { src: string; name: string }) {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [playing, setPlaying] = useState(false);
-
-  const handlePlay = () => {
-    const v = videoRef.current;
-    if (!v) return;
-
-    try {
-      v.currentTime = 0;
-    } catch {}
-
-    v.muted = false;
-    const playPromise = v.play();
-    setPlaying(true);
-
-    playPromise.catch(() => {
-      setPlaying(true);
-    });
-  };
-
   return (
     <figure className="bg-card border border-border p-4 md:p-5 flex flex-col gap-3 md:gap-4 rounded-sm shadow-elegant w-[210px] sm:w-[270px] md:w-[315px] shrink-0">
       <div className="relative w-full flex-1 rounded-sm overflow-hidden bg-black min-h-[280px]">
         <video
-          ref={videoRef}
-          src={src}
           controls
           playsInline
-          preload="metadata"
-          onPlay={() => setPlaying(true)}
-          onEnded={() => setPlaying(false)}
+          preload="auto"
           className="w-full h-full object-cover"
-        />
-        {!playing && (
-          <button
-            type="button"
-            onClick={handlePlay}
-            aria-label="Play testimonial video"
-            className="absolute inset-0 flex flex-col items-center justify-end pb-6 bg-gradient-to-br from-black/80 via-black/70 to-black/90 hover:from-black/70 hover:to-black/80 transition-colors group"
-          >
-            <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gold text-background group-hover:scale-110 transition-transform shadow-elegant">
-              <Play size={20} strokeWidth={2.5} fill="currentColor" className="ml-0.5" />
-            </span>
-          </button>
-        )}
+        >
+          <source src={src} type="video/mp4" />
+        </video>
       </div>
       <figcaption className="mt-auto pt-4 border-t border-border">
         <div className="text-sm text-muted-foreground">{name}</div>
