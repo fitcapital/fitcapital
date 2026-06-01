@@ -42,7 +42,7 @@ export function Tombstones() {
 
         <div className="marquee-track flex items-center py-10 w-max">
           {LOGO_GROUPS.map((groupIdx) => (
-            <div key={groupIdx} className="flex items-center gap-24 pr-24" aria-hidden={groupIdx === 1}>
+            <div key={groupIdx} className="flex items-center gap-24 pr-24" aria-hidden={groupIdx > 0}>
               {LOGOS.map((logo, i) => (
                 <img
                   key={i}
