@@ -123,7 +123,6 @@ function VideoCard({ src, name }: { src: string; name: string }) {
   const [playing, setPlaying] = useState(false);
 
   const handlePlay = () => {
-    setPlaying(true);
     const v = videoRef.current;
     if (!v) return;
 
@@ -149,7 +148,9 @@ function VideoCard({ src, name }: { src: string; name: string }) {
           playsInline
           preload="metadata"
           onPlay={() => setPlaying(true)}
+          onPause={() => setPlaying(false)}
           onEnded={() => setPlaying(false)}
+          onError={() => setPlaying(false)}
           className="w-full h-full object-cover"
         />
         {!playing && <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/60 via-black/30 to-black/70" />}
