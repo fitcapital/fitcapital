@@ -23,7 +23,7 @@ export function Testimonials() {
     {
       type: "video",
       src: obsidianVideo.url,
-      name: "Obsidian Security",
+      name: "Obsidian Security Video",
     },
     {
       type: "quote",
