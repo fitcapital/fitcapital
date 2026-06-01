@@ -61,7 +61,7 @@ function Hero() {
     <section className="relative pt-32 md:pt-40 pb-20 md:pb-28 bg-gradient-hero overflow-hidden">
       <div className="absolute inset-0 pointer-events-none opacity-[0.04] [background-image:linear-gradient(var(--color-foreground)_1px,transparent_1px),linear-gradient(90deg,var(--color-foreground)_1px,transparent_1px)] [background-size:64px_64px]" />
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
-        <h1 className="font-serif text-[3.375rem] sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] text-balance animate-fade-up mt-[5.125rem] md:mt-0">
+        <h1 className="font-serif text-[3.09375rem] sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] text-balance animate-fade-up mt-[5.125rem] md:mt-0">
           <span className="text-foreground">
             A debt-focused
             <br />
