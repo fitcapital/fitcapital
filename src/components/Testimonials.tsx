@@ -127,6 +127,7 @@ function VideoCard({ src, name }: { src: string; name: string }) {
     requestAnimationFrame(() => {
       const v = videoRef.current;
       if (!v) return;
+      v.currentTime = 2;
       v.muted = false;
       v.play().catch(() => {
         v.muted = true;
