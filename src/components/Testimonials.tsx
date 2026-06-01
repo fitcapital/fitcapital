@@ -22,7 +22,7 @@ export function Testimonials() {
     },
     {
       type: "video",
-      src: obsidianVideo.url,
+      src: `https://fitcapital.lovable.app${obsidianVideo.url}`,
       name: "Obsidian Security Video",
     },
     {
