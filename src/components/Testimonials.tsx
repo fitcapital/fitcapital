@@ -79,21 +79,7 @@ export function Testimonials() {
         >
           {quotes.map((q, i) =>
             q.type === "video" ? (
-              <figure
-                key={i}
-                className="bg-card border border-border p-4 md:p-5 flex flex-col gap-3 md:gap-4 rounded-sm shadow-elegant w-[210px] sm:w-[270px] md:w-[315px] shrink-0"
-              >
-                <video
-                  src={q.src}
-                  controls
-                  playsInline
-                  preload="metadata"
-                  className="w-full rounded-sm bg-black flex-1 object-cover"
-                />
-                <figcaption className="mt-auto pt-4 border-t border-border">
-                  <div className="text-sm text-muted-foreground">{q.name}</div>
-                </figcaption>
-              </figure>
+              <VideoCard key={i} src={q.src} name={q.name} />
             ) : (
               <figure
                 key={i}
