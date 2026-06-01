@@ -157,7 +157,7 @@ function WhyUs() {
             We've sat on the other side of the table.
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed max-w-xl">
-As former lenders, we've completed hundreds of transactions and understand what drives lender decision-making. Stay focused on building your business and let our team manage the capital raise process end-to-end.
+As former lenders, we've completed hundreds of transactions and understand what drives lender decision-making. Stay focused on building your business and let our team manage the capital raise process end-to-end
           </p>
         </div>
         <div>
