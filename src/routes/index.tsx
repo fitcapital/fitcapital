@@ -10,12 +10,13 @@ import {
   DialogTitle,
   DialogTrigger,
   DialogDescription,
+  DialogClose,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Linkedin } from "lucide-react";
+import { Linkedin, ArrowLeft } from "lucide-react";
 import joelPhoto from "@/assets/team-joel.png";
 import chadPhoto from "@/assets/team-chad.png";
 import jonPhoto from "@/assets/team-jon.png";
@@ -255,7 +256,17 @@ function Team() {
                   </div>
                 </article>
               </DialogTrigger>
-              <DialogContent className="max-w-2xl bg-background border-border">
+              <DialogContent className="max-w-2xl bg-background border-border max-h-[90vh] overflow-y-auto">
+                <DialogClose asChild>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="mb-2 -ml-2 self-start text-xs uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground"
+                  >
+                    <ArrowLeft className="w-4 h-4" />
+                    Back
+                  </Button>
+                </DialogClose>
                 <DialogHeader>
                   <DialogTitle className="font-serif text-3xl">{m.name}</DialogTitle>
                   <DialogDescription className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
