@@ -144,7 +144,7 @@
 .marquee-track {
   /* Mobile logos are ~70% the size of desktop, so shorten the duration
      proportionally to keep the on-screen px/sec speed consistent. */
-  animation: marquee 27s linear infinite;
+  animation: marquee 20s linear infinite;
   will-change: transform;
   backface-visibility: hidden;
   transform: translate3d(0, 0, 0);
