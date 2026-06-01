@@ -123,20 +123,20 @@ function VideoCard({ src, name }: { src: string; name: string }) {
   const [playing, setPlaying] = useState(false);
 
   const handlePlay = () => {
+    setPlaying(true);
     const v = videoRef.current;
     if (!v) return;
 
     try {
       v.currentTime = 0;
-    } catch {}
-
-    v.muted = false;
-    const playPromise = v.play();
-    setPlaying(true);
-
-    playPromise.catch(() => {
-      setPlaying(true);
-    });
+      v.muted = false;
+      v.play().catch(() => {
+        v.muted = true;
+        v.play().catch(() => setPlaying(false));
+      });
+    } catch {
+      setPlaying(false);
+    }
   };
 
   return (
@@ -152,16 +152,15 @@ function VideoCard({ src, name }: { src: string; name: string }) {
           onEnded={() => setPlaying(false)}
           className="w-full h-full object-cover"
         />
+        {!playing && <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/60 via-black/30 to-black/70" />}
         {!playing && (
           <button
             type="button"
             onClick={handlePlay}
             aria-label="Play testimonial video"
-            className="absolute inset-0 flex flex-col items-center justify-end pb-6 bg-gradient-to-br from-black/80 via-black/70 to-black/90 hover:from-black/70 hover:to-black/80 transition-colors group"
+            className="absolute left-1/2 bottom-14 -translate-x-1/2 inline-flex items-center justify-center w-11 h-11 rounded-full bg-gold text-background hover:scale-110 transition-transform shadow-elegant"
           >
-            <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gold text-background group-hover:scale-110 transition-transform shadow-elegant">
-              <Play size={20} strokeWidth={2.5} fill="currentColor" className="ml-0.5" />
-            </span>
+            <Play size={18} strokeWidth={2.5} fill="currentColor" className="ml-0.5" />
           </button>
         )}
       </div>
