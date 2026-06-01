@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Linkedin } from "lucide-react";
+import { Linkedin, ArrowLeft } from "lucide-react";
 import joelPhoto from "@/assets/team-joel.png";
 import chadPhoto from "@/assets/team-chad.png";
 import jonPhoto from "@/assets/team-jon.png";
