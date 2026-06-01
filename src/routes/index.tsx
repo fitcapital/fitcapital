@@ -76,17 +76,18 @@ function Hero() {
         </p>
 
         <dl className="mt-[9rem] md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-5">
-      {[
+          {[
             ["60+", "Years Experience"],
             ["150+", "Transactions"],
             ["250+", "Capital Partners"],
             ["$3.0B+", "Commitments"],
           ].map(([k, v]) => (
-            <div key={k} className="bg-card border border-border rounded-sm shadow-elegant p-6 md:p-8">
+            <div
+              key={k}
+              className="bg-card border border-border rounded-sm shadow-elegant p-6 md:p-8"
+            >
               <dt className="font-serif text-3xl md:text-5xl text-gold">{k}</dt>
-              <dd className="mt-2 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                {v}
-              </dd>
+              <dd className="mt-2 text-xs uppercase tracking-[0.2em] text-muted-foreground">{v}</dd>
             </div>
           ))}
         </dl>
@@ -116,7 +117,6 @@ function Services() {
   return (
     <section id="services" className="py-10 lg:py-14">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[1fr_2fr] gap-8">
-
         <div>
           <div className="eyebrow">What We Do</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
@@ -125,8 +125,10 @@ function Services() {
         </div>
         <div className="grid gap-3">
           {items.map((it) => (
-            <div key={it.tag} className="bg-card border border-border rounded-sm shadow-elegant py-4 px-6 grid md:grid-cols-[80px_1fr] gap-6 items-baseline">
-
+            <div
+              key={it.tag}
+              className="bg-card border border-border rounded-sm shadow-elegant py-4 px-6 grid md:grid-cols-[80px_1fr] gap-6 items-baseline"
+            >
               <div className="font-serif text-2xl text-gold">{it.tag}</div>
               <div>
                 <h3 className="font-serif text-2xl">{it.title}</h3>
@@ -150,14 +152,15 @@ function WhyUs() {
   return (
     <section className="py-10 lg:py-14">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-10 items-start">
-
         <div>
           <div className="eyebrow">Why fitcapital</div>
           <h2 className="mt-4 text-4xl md:text-5xl text-balance">
             We've sat on the other side of the table.
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed max-w-xl">
-              As former lenders, we've completed hundreds of transactions and understand what drives lender decision-making. Stay focused on building your business and let our team manage the capital raise process end-to-end.
+            As former lenders, we've completed hundreds of transactions and understand what drives
+            lender decision-making. Stay focused on building your business and let our team manage
+            the capital raise process end-to-end.
           </p>
         </div>
         <div>
@@ -170,7 +173,9 @@ function WhyUs() {
             ))}
           </div>
           <div className="mt-6">
-            <div className="uppercase tracking-[0.22em] text-[0.7rem] text-muted-foreground">Engagements</div>
+            <div className="uppercase tracking-[0.22em] text-[0.7rem] text-muted-foreground">
+              Engagements
+            </div>
             <div className="mt-2 space-y-[0.3375rem]">
               <div className="text-foreground">Target raise $10M – $100M+</div>
               <div className="text-sm text-muted-foreground">VC or PE-backed</div>
@@ -224,10 +229,10 @@ function Team() {
   return (
     <section id="team" className="py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="eyebrow">Leadership</div>
-          <h2 className="mt-4 text-4xl md:text-5xl text-balance">
-            Senior partners lead every engagement.
-          </h2>
+        <div className="eyebrow">Leadership</div>
+        <h2 className="mt-4 text-4xl md:text-5xl text-balance">
+          Senior partners lead every engagement.
+        </h2>
         <div className="mt-10 grid sm:grid-cols-2 md:grid-cols-3 gap-5">
           {members.map((m) => (
             <Dialog key={m.name}>
@@ -307,9 +312,7 @@ function CTA() {
   const handleSend = (e: React.FormEvent) => {
     e.preventDefault();
     const subject = encodeURIComponent(`New inquiry from ${name || "website"}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\n${message}`
-    );
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
     window.location.href = `mailto:joel@fitcapital.com?subject=${subject}&body=${body}`;
     setOpen(false);
   };
@@ -317,9 +320,7 @@ function CTA() {
   return (
     <section id="contact" className="py-12 lg:py-16">
       <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
-        <h2 className="mt-4 text-4xl md:text-6xl text-balance">
-          Considering a capital raise?
-        </h2>
+        <h2 className="mt-4 text-4xl md:text-6xl text-balance">Considering a capital raise?</h2>
         <p className="mt-6 text-muted-foreground max-w-xl mx-auto">
           Reach out to explore potential fit, structure, and market terms for your business
         </p>
