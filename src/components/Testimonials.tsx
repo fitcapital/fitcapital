@@ -127,12 +127,15 @@ function VideoCard({ src, name }: { src: string; name: string }) {
     if (!v) return;
 
     try {
-      v.currentTime = 0;
       v.muted = false;
-      v.play().catch(() => {
-        v.muted = true;
-        v.play().catch(() => setPlaying(false));
-      });
+      v.currentTime = 0;
+      v
+        .play()
+        .then(() => setPlaying(true))
+        .catch(() => {
+          v.muted = true;
+          v.play().then(() => setPlaying(true)).catch(() => setPlaying(false));
+        });
     } catch {
       setPlaying(false);
     }
@@ -143,23 +146,23 @@ function VideoCard({ src, name }: { src: string; name: string }) {
       <div className="relative w-full flex-1 rounded-sm overflow-hidden bg-black min-h-[280px]">
         <video
           ref={videoRef}
-          src={src}
           controls
           playsInline
-          preload="metadata"
+          preload="auto"
           onPlay={() => setPlaying(true)}
           onPause={() => setPlaying(false)}
           onEnded={() => setPlaying(false)}
           onError={() => setPlaying(false)}
           className="w-full h-full object-cover"
-        />
-        {!playing && <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/60 via-black/30 to-black/70" />}
+        >
+          <source src={src} type="video/mp4" />
+        </video>
         {!playing && (
           <button
             type="button"
             onClick={handlePlay}
             aria-label="Play testimonial video"
-            className="absolute left-1/2 bottom-14 -translate-x-1/2 inline-flex items-center justify-center w-11 h-11 rounded-full bg-gold text-background hover:scale-110 transition-transform shadow-elegant"
+            className="absolute left-1/2 bottom-16 -translate-x-1/2 inline-flex items-center justify-center w-11 h-11 rounded-full bg-gold text-background hover:scale-110 transition-transform shadow-elegant"
           >
             <Play size={18} strokeWidth={2.5} fill="currentColor" className="ml-0.5" />
           </button>
