@@ -160,13 +160,6 @@ As former lenders, we've completed hundreds of transactions and understand what 
           </p>
         </div>
         <div>
-          <div className="mb-6">
-            <div className="uppercase tracking-[0.22em] text-[0.7rem] text-muted-foreground">Engagements</div>
-            <div className="mt-2 space-y-[0.3375rem]">
-              <div className="text-foreground">Target raise $10M – $100M+</div>
-              <div className="text-sm text-muted-foreground">VC or PE-backed</div>
-            </div>
-          </div>
           <div className="space-y-0">
             {bullets.map((b) => (
               <div key={b} className="flex items-start gap-4 py-2 border-b border-border/40">
@@ -174,6 +167,13 @@ As former lenders, we've completed hundreds of transactions and understand what 
                 <span className="text-foreground text-lg leading-snug">{b}</span>
               </div>
             ))}
+          </div>
+          <div className="mt-6">
+            <div className="uppercase tracking-[0.22em] text-[0.7rem] text-muted-foreground">Engagements</div>
+            <div className="mt-2 space-y-[0.3375rem]">
+              <div className="text-foreground">Target raise $10M – $100M+</div>
+              <div className="text-sm text-muted-foreground">VC or PE-backed</div>
+            </div>
           </div>
         </div>
       </div>
