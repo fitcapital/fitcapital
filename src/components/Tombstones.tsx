@@ -19,9 +19,6 @@ const LOGOS = [
 ];
 
 export function Tombstones() {
-  // Duplicate twice so the marquee loops seamlessly (translate -50%).
-  const track = [...LOGOS, ...LOGOS];
-
   return (
     <section id="transactions" className="py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -41,15 +38,19 @@ export function Tombstones() {
         <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-gradient-to-r from-[#0a0a0a] to-transparent" />
         <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-gradient-to-l from-[#0a0a0a] to-transparent" />
 
-        <div className="marquee-track flex items-center gap-24 py-10 w-max">
-          {track.map((logo, i) => (
-            <img
-              key={i}
-              src={logo.src}
-              alt={logo.alt}
-              loading="lazy"
-              className="h-7 md:h-10 w-auto object-contain shrink-0 brightness-0 invert [image-rendering:auto]"
-            />
+        <div className="marquee-track flex items-center py-10 w-max">
+          {[0, 1].map((groupIdx) => (
+            <div key={groupIdx} className="flex items-center gap-24 pr-24" aria-hidden={groupIdx === 1}>
+              {LOGOS.map((logo, i) => (
+                <img
+                  key={i}
+                  src={logo.src}
+                  alt={logo.alt}
+                  loading="lazy"
+                  className="h-7 md:h-10 w-auto object-contain shrink-0 brightness-0 invert [image-rendering:auto]"
+                />
+              ))}
+            </div>
           ))}
         </div>
       </div>
