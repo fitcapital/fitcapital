@@ -286,10 +286,24 @@ function Team() {
 }
 
 function CTA() {
+  const [open, setOpen] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSend = (e: React.FormEvent) => {
+    e.preventDefault();
+    const subject = encodeURIComponent(`New inquiry from ${name || "website"}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\n${message}`
+    );
+    window.location.href = `mailto:joel@fitcapital.com?subject=${subject}&body=${body}`;
+    setOpen(false);
+  };
+
   return (
     <section id="contact" className="py-12 lg:py-16">
       <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
-        
         <h2 className="mt-4 text-4xl md:text-6xl text-balance">
           Considering a capital raise?
         </h2>
@@ -297,18 +311,61 @@ function CTA() {
           Reach out to explore potential fit, structure, and market terms for your business
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <a
-            href="mailto:info@fitcapital.com"
-            className="inline-flex items-center gap-2 bg-gradient-gold text-gold-foreground px-7 py-3 rounded-sm font-medium shadow-gold hover:opacity-95 transition-opacity"
-          >
-            Email the Team
-          </a>
-          <a
-            href="mailto:info@fitcapital.com"
-            className="text-sm text-muted-foreground hover:text-foreground"
-          >
-            info@fitcapital.com
-          </a>
+          <Dialog open={open} onOpenChange={setOpen}>
+            <DialogTrigger asChild>
+              <button
+                type="button"
+                className="inline-flex items-center gap-2 bg-gradient-gold text-gold-foreground px-7 py-3 rounded-sm font-medium shadow-gold hover:opacity-95 transition-opacity"
+              >
+                Email the Team
+              </button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-md">
+              <DialogHeader>
+                <DialogTitle>Email the Team</DialogTitle>
+                <DialogDescription>
+                  Send us a message and we'll get back to you shortly.
+                </DialogDescription>
+              </DialogHeader>
+              <form onSubmit={handleSend} className="space-y-4 text-left">
+                <div className="space-y-2">
+                  <Label htmlFor="contact-name">Name</Label>
+                  <Input
+                    id="contact-name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                    maxLength={100}
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="contact-email">Email</Label>
+                  <Input
+                    id="contact-email"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                    maxLength={255}
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="contact-message">Message</Label>
+                  <Textarea
+                    id="contact-message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    rows={5}
+                    required
+                    maxLength={2000}
+                  />
+                </div>
+                <Button type="submit" className="w-full">
+                  Send
+                </Button>
+              </form>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </section>
