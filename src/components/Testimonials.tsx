@@ -125,7 +125,13 @@ function VideoCard({ src, name }: { src: string; name: string }) {
   const handlePlay = () => {
     setPlaying(true);
     requestAnimationFrame(() => {
-      videoRef.current?.play().catch(() => {});
+      const v = videoRef.current;
+      if (!v) return;
+      v.muted = false;
+      v.play().catch(() => {
+        v.muted = true;
+        v.play().catch(() => {});
+      });
     });
   };
 
@@ -150,11 +156,7 @@ function VideoCard({ src, name }: { src: string; name: string }) {
           >
             <div className="text-center px-4">
               <div className="text-gold font-serif text-2xl md:text-3xl tracking-wide">
-                fitcapital
-              </div>
-              <div className="text-background/60 font-serif text-sm md:text-base my-1">×</div>
-              <div className="text-background font-serif text-2xl md:text-3xl tracking-wide">
-                Obsidian
+                Obsidian Security
               </div>
             </div>
             <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gold text-background group-hover:scale-110 transition-transform shadow-elegant">
