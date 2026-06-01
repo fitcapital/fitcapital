@@ -257,16 +257,6 @@ function Team() {
                 </article>
               </DialogTrigger>
               <DialogContent className="max-w-2xl bg-background border-border max-h-[90vh] overflow-y-auto">
-                <DialogClose asChild>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="mb-2 -ml-2 self-start text-xs uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground"
-                  >
-                    <ArrowLeft className="w-4 h-4" />
-                    Back
-                  </Button>
-                </DialogClose>
                 <DialogHeader>
                   <DialogTitle className="font-serif text-3xl">{m.name}</DialogTitle>
                   <DialogDescription className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
@@ -283,12 +273,20 @@ function Team() {
                     {m.bio.map((p, i) => (
                       <p key={i}>{p}</p>
                     ))}
-                    <Button variant="outline" size="sm" asChild className="mt-2">
-                      <a href={m.linkedin} target="_blank" rel="noopener noreferrer">
-                        <Linkedin className="w-4 h-4" />
-                        LinkedIn
-                      </a>
-                    </Button>
+                    <div className="flex items-center gap-3 mt-2">
+                      <Button variant="outline" size="sm" asChild>
+                        <a href={m.linkedin} target="_blank" rel="noopener noreferrer">
+                          <Linkedin className="w-4 h-4" />
+                          LinkedIn
+                        </a>
+                      </Button>
+                      <DialogClose asChild>
+                        <Button variant="outline" size="icon" className="h-8 w-8">
+                          <ArrowLeft className="w-4 h-4" />
+                          <span className="sr-only">Back</span>
+                        </Button>
+                      </DialogClose>
+                    </div>
                   </div>
                 </div>
               </DialogContent>
