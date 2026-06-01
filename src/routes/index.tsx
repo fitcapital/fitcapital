@@ -266,7 +266,7 @@ function Team() {
                   <img
                     src={m.photo}
                     alt=""
-                    className="w-full aspect-[4/5] object-cover border border-border"
+                    className="w-1/2 mx-auto sm:w-full sm:mx-0 aspect-[4/5] object-cover border border-border"
                   />
                   <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
                     {m.bio.map((p, i) => (
