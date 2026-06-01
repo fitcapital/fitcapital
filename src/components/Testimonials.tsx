@@ -135,7 +135,7 @@ function VideoCard({ src, name }: { src: string; name: string }) {
     setPlaying(true);
 
     playPromise.catch(() => {
-      setPlaying(false);
+      setPlaying(true);
     });
   };
 
@@ -145,11 +145,10 @@ function VideoCard({ src, name }: { src: string; name: string }) {
         <video
           ref={videoRef}
           src={src}
-          controls={playing}
+          controls
           playsInline
           preload="metadata"
           onPlay={() => setPlaying(true)}
-          onPause={() => setPlaying(false)}
           onEnded={() => setPlaying(false)}
           className="w-full h-full object-cover"
         />
