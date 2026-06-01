@@ -154,11 +154,6 @@ function VideoCard({ src, name }: { src: string; name: string }) {
             aria-label="Play testimonial video"
             className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-black/80 via-black/70 to-black/90 hover:from-black/70 hover:to-black/80 transition-colors group"
           >
-            <div className="text-center px-4">
-              <div className="text-gold font-serif text-2xl md:text-3xl tracking-wide">
-                Obsidian Security
-              </div>
-            </div>
             <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gold text-background group-hover:scale-110 transition-transform shadow-elegant">
               <Play size={22} strokeWidth={2.5} fill="currentColor" className="ml-0.5" />
             </span>
