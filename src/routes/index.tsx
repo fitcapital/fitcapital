@@ -104,7 +104,7 @@ function Services() {
     {
       tag: "02",
       title: "Growth Debt",
-      body: "Enterprise value and ARR-based capital solutions for growth, acquisitions, and other strategic objectives",
+      body: "Enterprise value and ARR-based solutions to support growth, M&A, and other strategic objectives",
     },
     {
       tag: "03",
