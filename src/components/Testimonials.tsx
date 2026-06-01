@@ -123,29 +123,19 @@ function VideoCard({ src, name }: { src: string; name: string }) {
   const [playing, setPlaying] = useState(false);
 
   const handlePlay = () => {
+    const v = videoRef.current;
+    if (!v) return;
+
+    try {
+      v.currentTime = 0;
+    } catch {}
+
+    v.muted = false;
+    const playPromise = v.play();
     setPlaying(true);
-    requestAnimationFrame(() => {
-      const v = videoRef.current;
-      if (!v) return;
 
-      const seekAndPlay = () => {
-        try {
-          if (v.duration && v.duration > 0) v.currentTime = 0;
-        } catch {}
-
-        v.muted = false;
-        v.play().catch(() => {
-          v.muted = true;
-          v.play().catch(() => {});
-        });
-      };
-
-      if (v.readyState >= 1 && !Number.isNaN(v.duration)) {
-        seekAndPlay();
-      } else {
-        v.addEventListener("loadedmetadata", seekAndPlay, { once: true });
-        v.load();
-      }
+    playPromise.catch(() => {
+      setPlaying(true);
     });
   };
 
@@ -155,9 +145,10 @@ function VideoCard({ src, name }: { src: string; name: string }) {
         <video
           ref={videoRef}
           src={src}
-          controls={playing}
+          controls
           playsInline
           preload="metadata"
+          onPlay={() => setPlaying(true)}
           onEnded={() => setPlaying(false)}
           className="w-full h-full object-cover"
         />
