@@ -130,8 +130,9 @@ function VideoCard({ src, name }: { src: string; name: string }) {
 
       const seekAndPlay = () => {
         try {
-          if (v.duration && v.duration > 2) v.currentTime = 2;
+          if (v.duration && v.duration > 0) v.currentTime = 0;
         } catch {}
+
         v.muted = false;
         v.play().catch(() => {
           v.muted = true;
