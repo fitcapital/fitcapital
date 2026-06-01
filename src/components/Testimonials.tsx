@@ -127,12 +127,24 @@ function VideoCard({ src, name }: { src: string; name: string }) {
     requestAnimationFrame(() => {
       const v = videoRef.current;
       if (!v) return;
-      v.currentTime = 2;
-      v.muted = false;
-      v.play().catch(() => {
-        v.muted = true;
-        v.play().catch(() => {});
-      });
+
+      const seekAndPlay = () => {
+        try {
+          if (v.duration && v.duration > 2) v.currentTime = 2;
+        } catch {}
+        v.muted = false;
+        v.play().catch(() => {
+          v.muted = true;
+          v.play().catch(() => {});
+        });
+      };
+
+      if (v.readyState >= 1 && !Number.isNaN(v.duration)) {
+        seekAndPlay();
+      } else {
+        v.addEventListener("loadedmetadata", seekAndPlay, { once: true });
+        v.load();
+      }
     });
   };
 
