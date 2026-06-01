@@ -164,7 +164,7 @@ As former lenders, we've completed hundreds of transactions and understand what 
               </div>
             ))}
           </div>
-          <div className="mt-8 pt-5 border-t border-border/40">
+          <div className="mt-4 pt-3 border-t border-border/40">
             <div className="uppercase tracking-[0.22em] text-[0.7rem] text-muted-foreground">Engagements</div>
             <div className="mt-2 space-y-[0.3375rem]">
               <div className="text-foreground">Target raise $10M – $100M+</div>
