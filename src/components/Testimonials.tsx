@@ -153,10 +153,10 @@ function VideoCard({ src, name }: { src: string; name: string }) {
             type="button"
             onClick={handlePlay}
             aria-label="Play testimonial video"
-            className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-black/80 via-black/70 to-black/90 hover:from-black/70 hover:to-black/80 transition-colors group"
+            className="absolute inset-0 flex flex-col items-center justify-end pb-6 bg-gradient-to-br from-black/80 via-black/70 to-black/90 hover:from-black/70 hover:to-black/80 transition-colors group"
           >
-            <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gold text-background group-hover:scale-110 transition-transform shadow-elegant">
-              <Play size={22} strokeWidth={2.5} fill="currentColor" className="ml-0.5" />
+            <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gold text-background group-hover:scale-110 transition-transform shadow-elegant">
+              <Play size={20} strokeWidth={2.5} fill="currentColor" className="ml-0.5" />
             </span>
           </button>
         )}
