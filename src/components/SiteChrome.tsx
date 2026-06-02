@@ -53,21 +53,13 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer className="border-t border-border mt-24">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12 grid gap-10 md:grid-cols-4 text-sm">
-        <div className="md:col-span-2">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12 text-sm">
+        <div>
           <img src={logoUrl} alt="fitcapital" className="h-9 w-auto object-contain" />
           <p className="mt-4 text-muted-foreground max-w-sm">
             A debt-focused investment bank built by lenders. Advising growth-stage
             companies on venture debt, growth debt, and structured capital solutions.
           </p>
-        </div>
-        <div>
-          <div className="eyebrow mb-3">Firm</div>
-          <ul className="space-y-2 text-muted-foreground">
-            <li><a href="#services" className="hover:text-foreground">Services</a></li>
-            <li><a href="#team" className="hover:text-foreground">Team</a></li>
-            <li><a href="#transactions" className="hover:text-foreground">Clients</a></li>
-          </ul>
         </div>
       </div>
 
