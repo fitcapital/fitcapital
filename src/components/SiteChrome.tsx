@@ -69,13 +69,6 @@ export function SiteFooter() {
             <li><a href="#transactions" className="hover:text-foreground">Clients</a></li>
           </ul>
         </div>
-        <div>
-          <div className="eyebrow mb-3">Contact</div>
-          <ul className="space-y-2 text-muted-foreground">
-            <li>info@fitcapital.com</li>
-            <li>United States</li>
-          </ul>
-        </div>
       </div>
 
       <div className="border-t border-border">
