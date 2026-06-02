@@ -80,7 +80,7 @@ function Hero() {
             ["60+", "Years Experience"],
             ["150+", "Transactions"],
             ["250+", "Capital Partners"],
-            ["$3.0B+", "Commitments"],
+            ["$3.0B+", "Transaction Value"],
           ].map(([k, v]) => (
             <div
               key={k}
