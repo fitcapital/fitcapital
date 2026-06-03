@@ -23,12 +23,12 @@ export function Testimonials() {
     {
       type: "video",
       src: `https://fitcapital.lovable.app${obsidianVideo.url}`,
-      name: "Obsidian Security Video",
+      name: "Client Voices: Obsidian Security",
     },
     {
       type: "quote",
       quote:
-        "Anyone can put together an outreach list, but having fitcapital on our side was a major differentiator. Their market knowledge and ability to navigate lender diligence and negotiations was unmatched.",
+        "Having fitcapital on our side was a major differentiator. Their market knowledge and ability to navigate lender diligence and negotiations was unmatched.",
       name: "Founder-CEO, Pipedreams",
     },
     {
