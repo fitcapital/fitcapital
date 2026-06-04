@@ -155,7 +155,7 @@ function VideoCard({ src, name }: { src: string; name: string }) {
               <img
                 src={posterSrc}
                 alt=""
-                className="absolute left-1/2 top-1/2 w-[82%] h-auto -translate-x-1/2 -translate-y-1/2 object-contain pointer-events-none"
+                className="absolute left-1/2 top-[46%] w-[88%] h-auto -translate-x-1/2 -translate-y-1/2 object-contain pointer-events-none"
               />
             )}
             <button
