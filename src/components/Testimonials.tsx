@@ -26,7 +26,7 @@ export function Testimonials() {
     {
       type: "video",
       src: `https://fitcapital.lovable.app${obsidianVideo.url}`,
-      name: "Client Voices: Obsidian Security",
+      name: "Client Voices: Obsidian Security Video",
     },
     {
       type: "quote",
