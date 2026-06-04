@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 import obsidianVideo from "@/assets/obsidian-testimonial.mp4.asset.json";
 import obsidianPosterAsset from "@/assets/fitcapital-obsidian-poster.png.asset.json";
 
-const obsidianPoster = obsidianPosterAsset.url;
+const obsidianPoster = `https://fitcapital.lovable.app${obsidianPosterAsset.url}`;
 
 type Testimonial =
   | { type: "quote"; quote: string; name: string }
