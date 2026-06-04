@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 import obsidianVideo from "@/assets/obsidian-testimonial.mp4.asset.json";
 import obsidianPosterAsset from "@/assets/fitcapital-obsidian-poster.png.asset.json";
@@ -123,7 +123,12 @@ export function Testimonials() {
 
 function VideoCard({ src, name }: { src: string; name: string }) {
   const [playing, setPlaying] = useState(false);
+  const [posterSrc, setPosterSrc] = useState("");
   const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    setPosterSrc(obsidianPoster);
+  }, []);
 
   const handlePlay = () => {
     setPlaying(true);
@@ -138,7 +143,6 @@ function VideoCard({ src, name }: { src: string; name: string }) {
           controls={playing}
           playsInline
           preload="metadata"
-          poster={obsidianPoster}
           className="w-full h-full object-contain"
           onEnded={() => setPlaying(false)}
         >
@@ -146,18 +150,20 @@ function VideoCard({ src, name }: { src: string; name: string }) {
         </video>
         {!playing && (
           <>
-            <img
-              src={obsidianPoster}
-              alt=""
-              className="absolute inset-0 w-full h-full object-contain pointer-events-none"
-            />
+            {posterSrc && (
+              <img
+                src={posterSrc}
+                alt=""
+                className="absolute left-1/2 top-[47%] w-[88%] max-w-[250px] h-auto -translate-x-1/2 -translate-y-1/2 object-contain pointer-events-none"
+              />
+            )}
             <button
               type="button"
               onClick={handlePlay}
               aria-label={`Play ${name}`}
-              className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/50 transition-colors group"
+              className="absolute inset-0 bg-black/30 hover:bg-black/50 transition-colors group"
             >
-              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/90 text-black group-hover:bg-white transition-colors">
+              <span className="absolute left-1/2 top-[58%] inline-flex w-8 h-8 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-black group-hover:bg-white transition-colors">
                 <Play size={14} fill="currentColor" />
               </span>
             </button>
