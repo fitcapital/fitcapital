@@ -120,17 +120,47 @@ export function Testimonials() {
 }
 
 function VideoCard({ src, name }: { src: string; name: string }) {
+  const [playing, setPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlay = () => {
+    setPlaying(true);
+    videoRef.current?.play();
+  };
+
   return (
     <figure className="bg-card border border-border p-4 md:p-5 flex flex-col gap-3 md:gap-4 rounded-sm shadow-elegant w-[210px] sm:w-[270px] md:w-[315px] shrink-0">
       <div className="relative w-full flex-1 rounded-sm overflow-hidden bg-black min-h-[280px]">
         <video
-          controls
+          ref={videoRef}
+          controls={playing}
           playsInline
-          preload="auto"
-          className="w-full h-full object-cover"
+          preload="metadata"
+          poster={obsidianPoster}
+          className="w-full h-full object-contain"
+          onEnded={() => setPlaying(false)}
         >
           <source src={src} type="video/mp4" />
         </video>
+        {!playing && (
+          <>
+            <img
+              src={obsidianPoster}
+              alt=""
+              className="absolute inset-0 w-full h-full object-contain pointer-events-none"
+            />
+            <button
+              type="button"
+              onClick={handlePlay}
+              aria-label={`Play ${name}`}
+              className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/50 transition-colors group"
+            >
+              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/90 text-black group-hover:bg-white transition-colors">
+                <Play size={14} fill="currentColor" />
+              </span>
+            </button>
+          </>
+        )}
       </div>
       <figcaption className="mt-auto pt-4 border-t border-border">
         <div className="text-sm text-muted-foreground">{name}</div>
