@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 import obsidianVideo from "@/assets/obsidian-testimonial.mp4.asset.json";
 import obsidianPosterAsset from "@/assets/fitcapital-obsidian-poster.png.asset.json";
@@ -123,12 +123,7 @@ export function Testimonials() {
 
 function VideoCard({ src, name }: { src: string; name: string }) {
   const [playing, setPlaying] = useState(false);
-  const [posterSrc, setPosterSrc] = useState("");
   const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    setPosterSrc(obsidianPoster);
-  }, []);
 
   const handlePlay = () => {
     setPlaying(true);
@@ -143,25 +138,24 @@ function VideoCard({ src, name }: { src: string; name: string }) {
           controls={playing}
           playsInline
           preload="metadata"
-          className="w-full h-full object-contain"
+          poster={obsidianPoster}
+          className={playing ? "w-full h-full object-contain" : "w-full h-full object-contain opacity-0"}
           onEnded={() => setPlaying(false)}
         >
           <source src={src} type="video/mp4" />
         </video>
         {!playing && (
           <>
-            {posterSrc && (
-              <img
-                src={posterSrc}
-                alt=""
-                className="absolute left-1/2 top-[47%] w-[88%] max-w-[250px] h-auto -translate-x-1/2 -translate-y-1/2 object-contain pointer-events-none"
-              />
-            )}
+            <img
+              src={obsidianPoster}
+              alt=""
+              className="absolute left-1/2 top-[47%] w-[92%] max-w-[280px] h-auto -translate-x-1/2 -translate-y-1/2 object-contain pointer-events-none"
+            />
             <button
               type="button"
               onClick={handlePlay}
               aria-label={`Play ${name}`}
-              className="absolute inset-0 bg-black/30 hover:bg-black/50 transition-colors group"
+              className="absolute inset-0 bg-transparent hover:bg-black/20 transition-colors group"
             >
               <span className="absolute left-1/2 top-[58%] inline-flex w-8 h-8 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-black group-hover:bg-white transition-colors">
                 <Play size={14} fill="currentColor" />
