@@ -143,7 +143,6 @@ function VideoCard({ src, name }: { src: string; name: string }) {
           controls={playing}
           playsInline
           preload="metadata"
-          poster={posterSrc || undefined}
           className="w-full h-full object-contain"
           onEnded={() => setPlaying(false)}
         >
@@ -151,19 +150,19 @@ function VideoCard({ src, name }: { src: string; name: string }) {
         </video>
         {!playing && (
           <>
-            {posterSrc && (
-              <img
-                src={posterSrc}
-                alt=""
-                className="absolute left-1/2 top-[46%] w-[88%] h-auto -translate-x-1/2 -translate-y-1/2 object-contain pointer-events-none"
-              />
-            )}
             <button
               type="button"
               onClick={handlePlay}
               aria-label={`Play ${name}`}
-              className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/50 transition-colors group"
+              className="absolute inset-0 flex flex-col items-center justify-center gap-5 bg-black/30 px-6 hover:bg-black/50 transition-colors group"
             >
+              {posterSrc && (
+                <img
+                  src={posterSrc}
+                  alt=""
+                  className="w-full max-w-[250px] h-auto object-contain"
+                />
+              )}
               <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/90 text-black group-hover:bg-white transition-colors">
                 <Play size={14} fill="currentColor" />
               </span>
