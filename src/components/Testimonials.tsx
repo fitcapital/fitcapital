@@ -139,7 +139,7 @@ function VideoCard({ src, name }: { src: string; name: string }) {
           playsInline
           preload="metadata"
           poster={obsidianPoster}
-          className="w-full h-full object-contain"
+          className={playing ? "w-full h-full object-contain" : "w-full h-full object-contain opacity-0"}
           onEnded={() => setPlaying(false)}
         >
           <source src={src} type="video/mp4" />
@@ -149,13 +149,13 @@ function VideoCard({ src, name }: { src: string; name: string }) {
             <img
               src={obsidianPoster}
               alt=""
-              className="absolute left-1/2 top-[47%] w-[88%] max-w-[250px] h-auto -translate-x-1/2 -translate-y-1/2 object-contain pointer-events-none"
+              className="absolute left-1/2 top-[47%] w-[92%] max-w-[280px] h-auto -translate-x-1/2 -translate-y-1/2 object-contain pointer-events-none"
             />
             <button
               type="button"
               onClick={handlePlay}
               aria-label={`Play ${name}`}
-              className="absolute inset-0 bg-black/30 hover:bg-black/50 transition-colors group"
+              className="absolute inset-0 bg-transparent hover:bg-black/20 transition-colors group"
             >
               <span className="absolute left-1/2 top-[58%] inline-flex w-8 h-8 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-black group-hover:bg-white transition-colors">
                 <Play size={14} fill="currentColor" />
