@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 import obsidianVideo from "@/assets/obsidian-testimonial.mp4.asset.json";
 import obsidianPosterAsset from "@/assets/fitcapital-obsidian-poster.png.asset.json";
@@ -123,7 +123,12 @@ export function Testimonials() {
 
 function VideoCard({ src, name }: { src: string; name: string }) {
   const [playing, setPlaying] = useState(false);
+  const [posterSrc, setPosterSrc] = useState("");
   const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    setPosterSrc(obsidianPoster);
+  }, []);
 
   const handlePlay = () => {
     setPlaying(true);
@@ -138,7 +143,7 @@ function VideoCard({ src, name }: { src: string; name: string }) {
           controls={playing}
           playsInline
           preload="metadata"
-          poster={obsidianPoster}
+          poster={posterSrc || undefined}
           className="w-full h-full object-contain"
           onEnded={() => setPlaying(false)}
         >
@@ -146,11 +151,13 @@ function VideoCard({ src, name }: { src: string; name: string }) {
         </video>
         {!playing && (
           <>
-            <img
-              src={obsidianPoster}
-              alt=""
-              className="absolute inset-0 w-full h-full object-contain pointer-events-none"
-            />
+            {posterSrc && (
+              <img
+                src={posterSrc}
+                alt=""
+                className="absolute left-1/2 top-1/2 w-[82%] h-auto -translate-x-1/2 -translate-y-1/2 object-contain pointer-events-none"
+              />
+            )}
             <button
               type="button"
               onClick={handlePlay}
