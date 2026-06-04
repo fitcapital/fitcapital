@@ -1,7 +1,9 @@
 import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 import obsidianVideo from "@/assets/obsidian-testimonial.mp4.asset.json";
-import obsidianPoster from "@/assets/fitcapital-obsidian-poster.png";
+import obsidianPosterAsset from "@/assets/fitcapital-obsidian-poster.png.asset.json";
+
+const obsidianPoster = obsidianPosterAsset.url;
 
 type Testimonial =
   | { type: "quote"; quote: string; name: string }
