@@ -10,16 +10,22 @@ import incortaAsset from "@/assets/clients/incorta.png.asset.json";
 import praxentAsset from "@/assets/clients/praxent.png.asset.json";
 import symphonyaiAsset from "@/assets/clients/symphonyai.png.asset.json";
 
-const LOGOS = [
+// Existing logos are pre-padded at ~30px tall. The three new logos have tight
+// bounding boxes and native height 70px, so they render ~2x larger at the same
+// CSS height. Scale them down so all logos share the same optical size.
+const TIGHT = "h-4 md:h-6";
+const DEFAULT_SIZE = "h-7 md:h-10";
+
+const LOGOS: { src: string; alt: string; sizeClass?: string }[] = [
   { src: cloudhesive, alt: "CloudHesive" },
-  { src: incortaAsset.url, alt: "Incorta" },
+  { src: incortaAsset.url, alt: "Incorta", sizeClass: TIGHT },
   { src: observe, alt: "Observe" },
   { src: obsidian, alt: "Obsidian" },
   { src: pipedreams, alt: "Pipedreams" },
-  { src: praxentAsset.url, alt: "Praxent" },
+  { src: praxentAsset.url, alt: "Praxent", sizeClass: TIGHT },
   { src: savvy, alt: "Savvy" },
   { src: stake, alt: "Stake" },
-  { src: symphonyaiAsset.url, alt: "SymphonyAI" },
+  { src: symphonyaiAsset.url, alt: "SymphonyAI", sizeClass: TIGHT },
   { src: tqa, alt: "TQA" },
   { src: trustlogix, alt: "TrustLogix" },
 ];
