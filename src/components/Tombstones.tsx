@@ -6,14 +6,20 @@ import savvy from "@/assets/clients/savvy.png";
 import stake from "@/assets/clients/stake.png";
 import tqa from "@/assets/clients/tqa.png";
 import trustlogix from "@/assets/clients/trustlogix.png";
+import incortaAsset from "@/assets/clients/incorta.png.asset.json";
+import praxentAsset from "@/assets/clients/praxent.png.asset.json";
+import symphonyaiAsset from "@/assets/clients/symphonyai.png.asset.json";
 
 const LOGOS = [
   { src: cloudhesive, alt: "CloudHesive" },
+  { src: incortaAsset.url, alt: "Incorta" },
   { src: observe, alt: "Observe" },
   { src: obsidian, alt: "Obsidian" },
   { src: pipedreams, alt: "Pipedreams" },
+  { src: praxentAsset.url, alt: "Praxent" },
   { src: savvy, alt: "Savvy" },
   { src: stake, alt: "Stake" },
+  { src: symphonyaiAsset.url, alt: "SymphonyAI" },
   { src: tqa, alt: "TQA" },
   { src: trustlogix, alt: "TrustLogix" },
 ];
