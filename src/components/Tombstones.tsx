@@ -67,7 +67,7 @@ export function Tombstones() {
                   alt={logo.alt}
                   loading="eager"
                   decoding="async"
-                  className={`${logo.sizeClass ?? DEFAULT_SIZE} w-auto object-contain shrink-0 [image-rendering:auto] brightness-0 invert`}
+                  className={`${logo.sizeClass ?? DEFAULT_SIZE} w-auto object-contain shrink-0 [image-rendering:auto] ${logo.className ?? "brightness-0 invert"}`}
                 />
               ))}
             </div>
