@@ -17,8 +17,8 @@ const TIGHT = "h-4 md:h-6";
 const DEFAULT_SIZE = "h-7 md:h-10";
 const LARGER = "h-[2.1875rem] md:h-[3.125rem]";
 
-const LOGOS: { src: string; alt: string; sizeClass?: string }[] = [
-  { src: cloudhesive, alt: "CloudHesive" },
+const LOGOS: { src: string; alt: string; sizeClass?: string; className?: string }[] = [
+  { src: cloudhesive, alt: "CloudHesive", className: "brightness-0 invert contrast-200" },
   { src: incorta, alt: "Incorta", sizeClass: TIGHT },
   { src: observe, alt: "Observe" },
   { src: obsidian, alt: "Obsidian" },
