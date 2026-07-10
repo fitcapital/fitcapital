@@ -15,6 +15,7 @@ import symphonyai from "@/assets/clients/symphonyai.png";
 // CSS height. Scale them down so all logos share the same optical size.
 const TIGHT = "h-4 md:h-6";
 const DEFAULT_SIZE = "h-7 md:h-10";
+const LARGER = "h-[2.1875rem] md:h-[3.125rem]";
 
 const LOGOS: { src: string; alt: string; sizeClass?: string }[] = [
   { src: cloudhesive, alt: "CloudHesive" },
