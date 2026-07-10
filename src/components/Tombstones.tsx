@@ -15,13 +15,14 @@ import symphonyai from "@/assets/clients/symphonyai.png";
 // CSS height. Scale them down so all logos share the same optical size.
 const TIGHT = "h-4 md:h-6";
 const DEFAULT_SIZE = "h-7 md:h-10";
+const LARGER = "h-[2.1875rem] md:h-[3.125rem]";
 
 const LOGOS: { src: string; alt: string; sizeClass?: string }[] = [
   { src: cloudhesive, alt: "CloudHesive" },
   { src: incorta, alt: "Incorta", sizeClass: TIGHT },
   { src: observe, alt: "Observe" },
   { src: obsidian, alt: "Obsidian" },
-  { src: pipedreams, alt: "Pipedreams" },
+  { src: pipedreams, alt: "Pipedreams", sizeClass: LARGER },
   { src: praxent, alt: "Praxent", sizeClass: TIGHT },
   { src: savvy, alt: "Savvy" },
   { src: stake, alt: "Stake" },
