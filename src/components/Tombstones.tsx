@@ -16,16 +16,16 @@ import symphonyaiAsset from "@/assets/clients/symphonyai.png.asset.json";
 const TIGHT = "h-4 md:h-6";
 const DEFAULT_SIZE = "h-7 md:h-10";
 
-const LOGOS: { src: string; alt: string; sizeClass?: string }[] = [
+const LOGOS: { src: string; alt: string; sizeClass?: string; keepColor?: boolean }[] = [
   { src: cloudhesive, alt: "CloudHesive" },
-  { src: incortaAsset.url, alt: "Incorta", sizeClass: TIGHT },
+  { src: incortaAsset.url, alt: "Incorta", sizeClass: TIGHT, keepColor: true },
   { src: observe, alt: "Observe" },
   { src: obsidian, alt: "Obsidian" },
   { src: pipedreams, alt: "Pipedreams" },
-  { src: praxentAsset.url, alt: "Praxent", sizeClass: TIGHT },
+  { src: praxentAsset.url, alt: "Praxent", sizeClass: TIGHT, keepColor: true },
   { src: savvy, alt: "Savvy" },
   { src: stake, alt: "Stake" },
-  { src: symphonyaiAsset.url, alt: "SymphonyAI", sizeClass: TIGHT },
+  { src: symphonyaiAsset.url, alt: "SymphonyAI", sizeClass: TIGHT, keepColor: true },
   { src: tqa, alt: "TQA" },
   { src: trustlogix, alt: "TrustLogix" },
 ];
@@ -66,7 +66,7 @@ export function Tombstones() {
                   alt={logo.alt}
                   loading="eager"
                   decoding="async"
-                  className={`${logo.sizeClass ?? DEFAULT_SIZE} w-auto object-contain shrink-0 brightness-0 invert [image-rendering:auto]`}
+                  className={`${logo.sizeClass ?? DEFAULT_SIZE} w-auto object-contain shrink-0 [image-rendering:auto] ${logo.keepColor ? "" : "brightness-0 invert"}`}
                 />
               ))}
             </div>
