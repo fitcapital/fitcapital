@@ -22,7 +22,7 @@ const LOGOS: { src: string; alt: string; sizeClass?: string }[] = [
   { src: incorta, alt: "Incorta", sizeClass: TIGHT },
   { src: observe, alt: "Observe" },
   { src: obsidian, alt: "Obsidian" },
-  { src: pipedreams, alt: "Pipedreams" },
+  { src: pipedreams, alt: "Pipedreams", sizeClass: LARGER },
   { src: praxent, alt: "Praxent", sizeClass: TIGHT },
   { src: savvy, alt: "Savvy" },
   { src: stake, alt: "Stake" },
